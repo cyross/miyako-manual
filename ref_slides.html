@@ -1,0 +1,2580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Miyako::Slidesモジュール</title>
+<meta http-equiv="Content-Stype-Type" content="text/css">
+<link rel="stylesheet" href="format.css">
+</head>
+<body>
+  <div id="top_title" style="text-align: center;">
+    <img src="./image/MiyakoIcon_thmb_mini.png" style="vertical-align:middle;"><span style="font-size: xx-large;vertical-align:middle;">
+      <a name="top">Miyakoリファレンスマニュアル</a>
+    </span>
+  </div>
+  <div id="top_body">
+  <table id="module_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="2"><a name="#Miyako::Slides">モジュール</a></td></tr>
+<tr><td class="module_name" colspan="2">Miyako::Slides</td></tr>
+<tr><td class="desc_body" colspan="2"></td></tr>
+<tr>
+<td class="requires">require</td>
+    <td class="requires_body"></td>
+  </tr>
+<tr>
+<td class="mixin">mixin</td>
+    <td class="mixin_body"></td>
+  </tr>
+<tr>
+<td class="mixin">mixin先</td>
+    <td class="mixin_body"></td>
+  </tr>
+<tr>
+<td class="cs">定数</td>
+    <td class="cs_body"></td>
+  </tr>
+<tr>
+<td class="sm">特異<br>メソッド</td>
+    <td class="sm_body">
+<a href="#create">create</a> <a href="#%5B%5D">[]</a> <a href="#%5B%5D=">[]=</a> </td>
+  </tr>
+<tr>
+<td class="mf">モジュール<br>関数</td>
+    <td class="mf_body">
+<a href="#initialize">initialize</a> <a href="#clone">clone</a> <a href="#dup">dup</a> <a href="#__getobj__">__getobj__</a> <br><a href="#marshal_dump">marshal_dump</a> <a href="#marshal_load">marshal_load</a> <a href="#method_missing">method_missing</a> <a href="#respond_to?">respond_to?</a> <br><a href="#__setobj__">__setobj__</a> <a href="#init_slide">init_slide</a> <a href="#slide_body">slide_body</a> <a href="#piece">piece</a> <br><a href="#%5B%5D">[]</a> <a href="#%5B%5D=">[]=</a> <a href="#render">render</a> <a href="#render_to">render_to</a> <br><a href="#show">show</a> <a href="#hide">hide</a> <a href="#update">update</a> <a href="#update_animation">update_animation</a> <br><a href="#stop">stop</a> <a href="#reset">reset</a> <a href="#slide_render">slide_render</a> <a href="#slide_render_to">slide_render_to</a> <br><a href="#slide_show">slide_show</a> <a href="#slide_hide">slide_hide</a> <a href="#slide_update">slide_update</a> <a href="#slide_update_animation">slide_update_animation</a> <br><a href="#slide_start">slide_start</a> <a href="#slide_stop">slide_stop</a> <a href="#slide_reset">slide_reset</a> <a href="#dispose">dispose</a> <br>
+</td>
+  </tr>
+<tr>
+<td class="class">内部クラス</td>
+    <td class="class_body"></td>
+  </tr>
+<tr>
+<td class="module">内部モジュール</td>
+    <td class="module_body"></td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="create">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">create</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides.create</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">[]</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides.[]</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D=">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">[]=</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides.[]=</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="initialize">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">initialize</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.initialize</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="clone">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">clone</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.clone</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="dup">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">dup</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.dup</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="__getobj__">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">__getobj__</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.__getobj__</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="marshal_dump">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">marshal_dump</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.marshal_dump</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="marshal_load">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">marshal_load</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.marshal_load</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="method_missing">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">method_missing</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.method_missing</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="respond_to?">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">respond_to?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.respond_to?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="__setobj__">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">__setobj__</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.__setobj__</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="init_slide">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">init_slide</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.init_slide</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_body">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_body</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_body</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="piece">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">piece</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.piece</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">[]</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.[]</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D=">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">[]=</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.[]=</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">render</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.render</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render_to">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">render_to</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.render_to</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="show">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">show</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.show</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="hide">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">hide</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.hide</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">update</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.update</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update_animation">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">update_animation</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.update_animation</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="stop">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">stop</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.stop</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reset">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">reset</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.reset</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_render">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_render</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_render</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_render_to">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_render_to</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_render_to</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_show">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_show</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_show</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_hide">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_hide</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_hide</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_update">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_update</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_update</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_update_animation">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_update_animation</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_update_animation</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_start">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_start</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_start</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_stop">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_stop</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_stop</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slide_reset">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">slide_reset</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.slide_reset</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mf_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="dispose">モジュール関数</a></td></tr>
+<tr><td class="mf_name" colspan="4">dispose</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Slides#.dispose</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+</div>
+</body>
+</html>

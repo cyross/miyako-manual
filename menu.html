@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Miyako Reference Manual</title>
+  <meta http-equiv="Content-Stype-Type" content="text/css">
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+<h2 class="menu_title">メニュー</h2>
+<div align="center">
+<table border="2">
+  <tr><td align="center">はじめに</td></tr>
+  <tr><td align="center">なんやかんや</td></tr>
+  <tr><td align="center">なんやかんや</td></tr>
+  <tr><td align="center">リファレンス</td></tr>
+  <tr><td align="center">
+    <table>
+      <tr>
+        <td align="center" colspan="5">
+          <table border="1">
+            <tr><th align="center" colspan="4" class="menu_body">凡例</th></tr>
+            <tr>
+              <td align="center" class="module_head">M</td>
+              <td align="center" class="menu_body">モジュール</td>
+              <td align="center" class="class_head">C</td>
+              <td align="center" class="menu_body">クラス</td>
+            </tr>
+            <tr>
+              <td align="center" class="struct_head">S</td>
+              <td align="center" class="menu_body">構造体</td>
+              <td align="center" class="exception_head">E</td>
+              <td align="center" class="menu_body">例外</td>
+            </tr>
+            <tr>
+              <td align="center" colspan="2"><span style="color: red; font-weight: bold;">赤文字</span></td>
+              <td align="center" colspan="2" class="menu_body">重要な箇所</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr><td align="center" colspan="5" class="menu_category">API</td></tr>
+      <tr>
+        <td align="center" colspan="5" class="menu_body"><a target="main" href="ref_main.html">main</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_miyako.html">Miyako</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_audio.html">Audio</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_audio_bgm.html" class="important">BGM</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_audio_se.html" class="important">SE</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_single_enumerable.html">SingleEnumerable</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_bitmap.html">Bitmap</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_choice.html">Choice<br>(ChoiceStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_choices.html">Choices</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_collision.html" class="important">Collision</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_collision_ex.html">CollisionEx</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_circle_collision.html">CircleCollision</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_circle_collision_ex.html">CircleCollisionEx</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_collisions.html">Collisions</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_color.html" class="important">Color</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_diagram.html">Diagram</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_node_base.html">NodeBase</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_trigger_base.html">TriggerBase</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_default_trigger.html">DefaultTrigger</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_body.html">DiagramBody</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_manager.html">Manager</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_renderer.html">Renderer</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_diagram_processor.html">Processor</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_drawing.html" class="important">Drawing</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_fixedmap.html">FixedMap</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_fixedmap_layer.html">FixedMapLayer</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_font.html" class="important">Font</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_initiative_yuki_template.html">InitiativeYukiTemplate</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_initiative_yuki.html">InitiativeYuki</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_canceled.html">Canceled</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_command.html">Command</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_command_ex.html">CommandEx</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_input.html" class="important">Input</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_layout_struct.html">LayoutStruct</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_layout_snap_struct.html">LayoutSnapStruct</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_layout.html" class="important">Layout</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_layout_space.html">LayoutSpace</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map.html">Map</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_map_layer.html">MapLayer</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_event.html">MapEvent</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_event_manager.html">MapEventManager</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_chip.html">MapChip<br>(MapChipStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_chip_factory.html">MapChipFactory</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_struct.html">MapStruct<br>(MapStructStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_struct_factory.html">MapStructFactory</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_map_dir.html">MapDir</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_base.html">SpriteBase</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_animation.html">Animation</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_array.html">SpriteArray</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_deep_copy.html">DeepCopy</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_movie.html">Movie</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_parts.html">Parts</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_plane.html">Plane</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_screen.html" class="important">Screen</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_shape.html">Shape</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite.html" class="important">Sprite</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_animation.html">SpriteAnimation</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_list_pair.html">ListPair<br>(ListPairStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_list.html" class="important">SpriteList</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_unit.html">SpriteUnit<br>(SpriteUnitBase)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_sprite_unit_factory.html">SpriteUnitFactory</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_story.html" class="important">Story</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_scene.html" class="important">Scene</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_point.html" class="important">Point<br>(PointStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_rect.html" class="important">Rect<br>(RectStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_segment.html">Segment<br>(SegmentStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_segments.html">Segments<br>(SegmentStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_size.html" class="important">Size<br>(SizeStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_square.html">Square<br>(SquareStruct)</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_text_box.html">TextBox</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_utility.html">Utility</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_viewport.html">Viewport</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="1"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_wait_counter.html" class="important">WaitCounter</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_yuki.html">Yuki</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_canceled.html">Canceled</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_command.html">Command</a></td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"></td>
+        <td align="center" class="struct_head">S</td>
+        <td align="center" colspan="2" class="menu_body"><a target="main" href="ref_yuki_command_ex.html">CommandEx</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_error.html">MiyakoError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_io_error.html">MiyakoIOError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_file_format_error.html">MiyakoFileFormatError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_value_error.html">MiyakoValueError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_proc_error.html">MiyakoProcError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_type_error.html">MiyakoTypeError</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="exception_head">E</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_miyako_copy_error.html">MiyakoCopyError</a></td>
+      </tr>
+      <tr><td align="center" colspan="5" class="menu_category">EXT</td></tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_raster_scroll.html">RasterScroll</a></td>
+      </tr>
+      <tr>
+        <td align="center"></td>
+        <td align="center" class="module_head">M</td>
+        <td align="center" colspan="3" class="menu_body"><a target="main" href="ref_slides.html">Slides</a></td>
+      </tr>
+      <tr><td align="center" colspan="5" class="menu_category">既存クラス</td></tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_array.html">Array</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_hash.html">Hash</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_integer.html">Integer</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_numeric.html">Numeric</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_object.html">Object</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_string.html">String</a></td>
+      </tr>
+      <tr>
+        <td align="center" class="class_head">C</td>
+        <td align="center" colspan="4" class="menu_body"><a target="main" href="ref_symbol.html">Symbol</a></td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+</div>
+</body>
+</html>

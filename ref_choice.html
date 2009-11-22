@@ -1,0 +1,1077 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Miyako::Choice<br>(Miyako::ChoiceStruct)構造体</title>
+<meta http-equiv="Content-Stype-Type" content="text/css">
+<link rel="stylesheet" href="format.css">
+</head>
+<body>
+  <div id="top_title" style="text-align: center;">
+    <img src="./image/MiyakoIcon_thmb_mini.png" style="vertical-align:middle;"><span style="font-size: xx-large;vertical-align:middle;">
+      <a name="top">Miyakoリファレンスマニュアル</a>
+    </span>
+  </div>
+  <div id="top_body">
+  <table id="struct_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="2"><a name="#Miyako::Choice">構造体</a></td></tr>
+<tr><td class="struct_name" colspan="2">Miyako::Choice<br>(Miyako::ChoiceStruct)</td></tr>
+<tr><td class="desc_body" colspan="2"></td></tr>
+<tr>
+<td class="inherited">派生元クラス</td>
+    <td class="inherited_body"></td>
+  </tr>
+<tr>
+<td class="requires">require</td>
+    <td class="requires_body"></td>
+  </tr>
+<tr>
+<td class="mixin">mixin</td>
+    <td class="mixin_body"></td>
+  </tr>
+<tr>
+<td class="delegated">委譲元クラス</td>
+    <td class="delegated_body"></td>
+  </tr>
+<tr>
+<td class="cs">定数</td>
+    <td class="cs_body"></td>
+  </tr>
+<tr>
+<td class="mm">メンバー</td>
+    <td class="mm_body">
+<a href="#body">body</a> <a href="#body_selected">body_selected</a> <a href="#body_disable">body_disable</a> <a href="#condition">condition</a> <br><a href="#enable">enable</a> <a href="#selected">selected</a> <a href="#result">result</a> <a href="#left">left</a> <br><a href="#right">right</a> <a href="#up">up</a> <a href="#down">down</a> <a href="#base">base</a> <br><a href="#attribute">attribute</a> <a href="#end_select_proc">end_select_proc</a> <a href="#name">name</a> </td>
+  </tr>
+<tr>
+<td class="sm">特異<br>メソッド</td>
+    <td class="sm_body">
+<a href="#new">new</a> </td>
+  </tr>
+<tr>
+<td class="ac">アクセサ</td>
+    <td class="ac_body">
+<a href="#visible">visible</a> <a href="#update_layout_position">update_layout_position</a> <a href="#process_sprites">process_sprites</a> <a href="#start">start</a> <br><a href="#stop">stop</a> <a href="#reset">reset</a> <a href="#update_animation">update_animation</a> <a href="#render_src%20nd">render_src nd</a> <br><a href="#render">render</a> <a href="#render_to">render_to</a> <a href="#update_layout_size">update_layout_size</a> <a href="#broad_rect">broad_rect</a> <br>
+</td>
+  </tr>
+<tr>
+<td class="im">インスタンス<br>メソッド</td>
+    <td class="im_body"></td>
+  </tr>
+<tr>
+<td class="inherits">派生先クラス</td>
+    <td class="inherits_body"></td>
+  </tr>
+<tr>
+<td class="delegats">委譲先クラス</td>
+    <td class="delegats_body"></td>
+  </tr>
+<tr>
+<td class="class">内部クラス</td>
+    <td class="class_body"></td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="new">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">new</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice.new</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="body">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">body</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#body</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="body_selected">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">body_selected</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#body_selected</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="body_disable">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">body_disable</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#body_disable</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="condition">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">condition</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#condition</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="enable">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">enable</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#enable</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="selected">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">selected</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#selected</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="result">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">result</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#result</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="left">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">left</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#left</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="right">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">right</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#right</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="up">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">up</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#up</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="down">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">down</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#down</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="base">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">base</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#base</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="attribute">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">attribute</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#attribute</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="end_select_proc">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">end_select_proc</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#end_select_proc</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="mm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="name">構造体メンバー</a></td></tr>
+<tr><td class="mm_name" colspan="4">name</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#name</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="visible">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">visible</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#visible</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update_layout_position">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">update_layout_position</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#update_layout_position</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="process_sprites">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">process_sprites</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#process_sprites</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="start">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">start</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#start</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="stop">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">stop</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#stop</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reset">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">reset</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#reset</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update_animation">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">update_animation</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#update_animation</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render_src%20nd">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">render_src nd</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#render_src nd</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">render</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#render</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render_to">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">render_to</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#render_to</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update_layout_size">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">update_layout_size</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#update_layout_size</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="broad_rect">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">broad_rect</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::Choice#broad_rect</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+</div>
+</body>
+</html>

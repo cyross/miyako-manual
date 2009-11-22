@@ -1,0 +1,6874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Miyako::SpriteListクラス</title>
+<meta http-equiv="Content-Stype-Type" content="text/css">
+<link rel="stylesheet" href="format.css">
+</head>
+<body>
+  <div id="top_title" style="text-align: center;">
+    <img src="./image/MiyakoIcon_thmb_mini.png" style="vertical-align:middle;"><span style="font-size: xx-large;vertical-align:middle;">
+      <a name="top">Miyakoリファレンスマニュアル</a>
+    </span>
+  </div>
+  <div id="top_body">
+  <table id="class_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="2"><a name="#Miyako::SpriteList">クラス</a></td></tr>
+<tr><td class="class_name" colspan="2">Miyako::SpriteList</td></tr>
+<tr><td class="desc_body" colspan="2"></td></tr>
+<tr>
+<td class="requires">require</td>
+    <td class="requires_body"></td>
+  </tr>
+<tr>
+<td class="inherited">派生元クラス</td>
+    <td class="inherited_body"></td>
+  </tr>
+<tr>
+<td class="mixin">mixin</td>
+    <td class="mixin_body"></td>
+  </tr>
+<tr>
+<td class="delegated">委譲元クラス</td>
+    <td class="delegated_body"></td>
+  </tr>
+<tr>
+<td class="cs">定数</td>
+    <td class="cs_body"></td>
+  </tr>
+<tr>
+<td class="sm">特異<br>メソッド</td>
+    <td class="sm_body">
+<a href="#%5B%5D">[]</a> <a href="#new">new</a> </td>
+  </tr>
+<tr>
+<td class="ac">アクセサ</td>
+    <td class="ac_body">
+<a href="#visible">visible</a> </td>
+  </tr>
+<tr>
+<td class="im">インスタンス<br>メソッド</td>
+    <td class="im_body">
+<a href="#reflesh">reflesh</a> <a href="#initialize_copy">initialize_copy</a> <a href="#sprite_only">sprite_only</a> <a href="#sprite_only!">sprite_only!</a> <br><a href="#each">each</a> <a href="#each_pair">each_pair</a> <a href="#each_name">each_name</a> <a href="#each_value">each_value</a> <br><a href="#each_index">each_index</a> <a href="#all">all</a> <a href="#names">names</a> <a href="#values">values</a> <br><a href="#pairs">pairs</a> <a href="#empty?">empty?</a> <a href="#index">index</a> <a href="#eql?">eql?</a> <br><a href="#has_key?">has_key?</a> <a href="#has_name?">has_name?</a> <a href="#include?">include?</a> <a href="#has_value?">has_value?</a> <br><a href="#length">length</a> <a href="#size">size</a> <a href="#assoc">assoc</a> <a href="#name">name</a> <br><a href="#first">first</a> <a href="#last">last</a> <a href="#&lt;&lt;"> </a><a href="#+">+</a> <br><a href="#*">*</a> <a href="#-">-</a> <a href="#&amp;">&amp;</a> <a href="#%7C">|</a> <br><a href="#==">==</a> <a href="#add">add</a> <a href="#push">push</a> <a href="#pop">pop</a> <br><a href="#unshift">unshift</a> <a href="#slice">slice</a> <a href="#slice!">slice!</a> <a href="#shift">shift</a> <br><a href="#delete">delete</a> <a href="#delete_at">delete_at</a> <a href="#delete_if">delete_if</a> <a href="#reject">reject</a> <br><a href="#delete_if!">delete_if!</a> <a href="#reject!">reject!</a> <a href="#concat">concat</a> <a href="#merge">merge</a> <br><a href="#merge!">merge!</a> <a href="#cycle">cycle</a> <a href="#shuffle">shuffle</a> <a href="#shuffle!">shuffle!</a> <br><a href="#sample">sample</a> <a href="#combination">combination</a> <a href="#permutation">permutation</a> <a href="#replace">replace</a> <br><a href="#reverse">reverse</a> <a href="#reverse!">reverse!</a> <a href="#%5B%5D">[]</a> <a href="#%5B%5D=">[]=</a> <br><a href="#pairs_at">pairs_at</a> <a href="#values_at">values_at</a> <a href="#zip">zip</a> <a href="#move!">move!</a> <br><a href="#move_to!">move_to!</a> <a href="#to_a">to_a</a> <a href="#to_ary">to_ary</a> <a href="#to_hash">to_hash</a> <br><a href="#clear">clear</a> <a href="#dispose">dispose</a> <a href="#fetch">fetch</a> <a href="#insert">insert</a> <br><a href="#insert_after">insert_after</a> <a href="#swap">swap</a> <a href="#to_first_inner">to_first_inner</a> <a href="#to_first">to_first</a> <br><a href="#to_first!">to_first!</a> <a href="#pickup_inner">pickup_inner</a> <a href="#pickup">pickup</a> <a href="#pickup!">pickup!</a> <br><a href="#to_last">to_last</a> <a href="#to_last!">to_last!</a> <a href="#show">show</a> <a href="#hide">hide</a> <br><a href="#show_only">show_only</a> <a href="#hide_only">hide_only</a> <a href="#start">start</a> <a href="#stop">stop</a> <br><a href="#reset">reset</a> <a href="#update_animation">update_animation</a> <a href="#render">render</a> <a href="#render_to">render_to</a> <br><a href="#to_s">to_s</a> </td>
+  </tr>
+<tr>
+<td class="inherits">派生先クラス</td>
+    <td class="inherits_body"></td>
+  </tr>
+<tr>
+<td class="delegats">委譲先クラス</td>
+    <td class="delegats_body"></td>
+  </tr>
+<tr>
+<td class="class">内部クラス</td>
+    <td class="class_body"></td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">[]</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList.[]</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="sm_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="new">特異メソッド</a></td></tr>
+<tr><td class="sm_name" colspan="4">new</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList.new</td></tr>
+<tr><td class="desc_body" colspan="4"><a target="main"></a></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"><a target="main">
+  </a></td>
+</tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="ac_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="visible">アクセサ</a></td></tr>
+<tr><td class="ac_name" colspan="4">visible</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#visible</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>形式</td>
+    <td class="access_body" colspan="3">reader/writer/accessor</td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reflesh">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reflesh</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reflesh</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="initialize_copy">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">initialize_copy</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#initialize_copy</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="sprite_only">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">sprite_only</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#sprite_only</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="sprite_only!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">sprite_only!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#sprite_only!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="each">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">each</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#each</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="each_pair">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">each_pair</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#each_pair</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="each_name">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">each_name</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#each_name</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="each_value">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">each_value</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#each_value</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="each_index">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">each_index</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#each_index</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="all">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">all</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#all</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="names">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">names</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#names</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="values">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">values</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#values</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pairs">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pairs</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pairs</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="empty?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">empty?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#empty?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="index">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">index</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#index</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="eql?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">eql?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#eql?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="has_key?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">has_key?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#has_key?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="has_name?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">has_name?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#has_name?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="include?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">include?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#include?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="has_value?">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">has_value?</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#has_value?</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="length">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">length</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#length</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="size">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">size</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#size</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="assoc">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">assoc</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#assoc</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="name">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">name</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#name</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="first">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">first</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#first</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="last">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">last</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#last</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="&lt;&lt;">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">&lt;&lt;</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#&lt;&lt;</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="+">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">+</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#+</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="*">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">*</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#*</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="-">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">-</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#-</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="&amp;">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">&amp;</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#&amp;</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%7C">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">|</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#|</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="==">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">==</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#==</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="add">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">add</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#add</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="push">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">push</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#push</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pop">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pop</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pop</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="unshift">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">unshift</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#unshift</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slice">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">slice</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#slice</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="slice!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">slice!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#slice!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="shift">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">shift</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#shift</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="delete">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">delete</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#delete</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="delete_at">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">delete_at</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#delete_at</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="delete_if">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">delete_if</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#delete_if</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reject">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reject</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reject</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="delete_if!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">delete_if!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#delete_if!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reject!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reject!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reject!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="concat">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">concat</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#concat</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="merge">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">merge</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#merge</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="merge!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">merge!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#merge!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="cycle">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">cycle</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#cycle</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="shuffle">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">shuffle</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#shuffle</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="shuffle!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">shuffle!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#shuffle!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="sample">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">sample</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#sample</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="combination">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">combination</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#combination</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="permutation">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">permutation</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#permutation</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="replace">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">replace</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#replace</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reverse">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reverse</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reverse</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reverse!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reverse!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reverse!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">[]</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#[]</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="%5B%5D=">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">[]=</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#[]=</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pairs_at">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pairs_at</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pairs_at</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="values_at">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">values_at</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#values_at</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="zip">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">zip</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#zip</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="move!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">move!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#move!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="move_to!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">move_to!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#move_to!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_a">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_a</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_a</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_ary">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_ary</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_ary</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_hash">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_hash</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_hash</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="clear">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">clear</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#clear</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="dispose">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">dispose</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#dispose</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="fetch">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">fetch</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#fetch</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="insert">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">insert</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#insert</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="insert_after">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">insert_after</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#insert_after</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="swap">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">swap</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#swap</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_first_inner">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_first_inner</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_first_inner</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_first">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_first</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_first</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_first!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_first!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_first!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pickup_inner">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pickup_inner</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pickup_inner</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pickup">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pickup</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pickup</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="pickup!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">pickup!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#pickup!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_last">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_last</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_last</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_last!">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_last!</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_last!</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="show">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">show</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#show</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="hide">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">hide</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#hide</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="show_only">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">show_only</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#show_only</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="hide_only">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">hide_only</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#hide_only</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="start">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">start</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#start</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="stop">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">stop</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#stop</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="reset">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">reset</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#reset</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="update_animation">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">update_animation</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#update_animation</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">render</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#render</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="render_to">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">render_to</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#render_to</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<table id="im_body" class="ref_body"><tbody>
+<tr><td class="type_name" colspan="4"><a name="to_s">インスタンスメソッド</a></td></tr>
+<tr><td class="im_name" colspan="4">to_s</td></tr>
+<tr><td class="real_name" colspan="4">Miyako::SpriteList#to_s</td></tr>
+<tr><td class="desc_body" colspan="4"></td></tr>
+<tr>
+<td class="desc_format">書式</td>
+    <td class="format_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="desc_parameter" rowspan="6">引数</td>
+    <td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="param_value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="parameter_name" rowspan="3">[[引数名]]</td>
+    <td class="desc_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="value">値</td>
+    <td class="value_body"></td>
+  </tr>
+<tr>
+<td class="omit_value">値(省略時)</td>
+    <td class="omit_value_body"></td>
+  </tr>
+<tr>
+<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+    <td class="use_block_body" colspan="3">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_need">強制</td>
+    <td class="use_block_need_body" colspan="2">○/×</td>
+  </tr>
+<tr>
+<td class="use_block_format">書式</td>
+    <td class="use_block_format_body" colspan="2"></td>
+  </tr>
+<tr>
+<td class="return_value">戻り値</td>
+    <td class="return_value_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="access">アクセス<br>指定</td>
+    <td class="access_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="examples">例</td>
+    <td class="examples_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="reference">参照</td>
+    <td class="reference_body" colspan="3"></td>
+  </tr>
+<tr>
+<td class="return_to_top" colspan="4">
+      <a class="return_to_top" href="#top">
+        戻る
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+</div>
+</body>
+</html>

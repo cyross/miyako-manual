@@ -1,0 +1,72 @@
+body {
+  background-image: url("./image/MiyakoBack.png");
+}
+
+div.logo{
+  text-align: center;
+}
+
+div.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  color: red;
+  background-color: white;
+}
+
+div.copyright{
+  text-align: right;
+  color: red;
+  background-color: white;
+}
+
+h2.menu_title{
+  text-align: center;
+  color: red;
+  background-color: white;
+}
+
+td.module_head{
+  color: yellow;
+  background-color: green;
+  font-weight: bold;
+}
+
+td.class_head{
+  color: red;
+  background-color: white;
+  font-weight: bold;
+}
+
+td.struct_head{
+  color: black;
+  background-color: #ffc0c0;
+  font-weight: bold;
+}
+
+td.exception_head{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+
+td.menu_body{
+  text-align: left;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+td.menu_category{
+  color: black;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+a.important{
+  text-align: left;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+}
