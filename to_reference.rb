@@ -169,11 +169,11 @@ class Hinagata
             next
           when "use_block_body"
             use_block[key] = elm[key]
-            child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = elm[key] ? "○" : "×"
             unless elm[key]
-              child.xpath("//td[@class=\"use_block_need_body\"]")[0].parent.unlink
+              child.xpath("//td[@class=\"use_block\"]")[0].parent.unlink
+#              child.xpath("//td[@class=\"use_block_need_body\"]")[0].parent.unlink
               child.xpath("//td[@class=\"use_block_format_body\"]")[0].parent.unlink
-              child.xpath("//td[@class=\"use_block\"]")[0].attribute("rowspan").value = "1"
+#              child.xpath("//td[@class=\"use_block\"]")[0].attribute("rowspan").value = "1"
             end
           when "use_block_need_body"
             use_block[key] = elm[key]
