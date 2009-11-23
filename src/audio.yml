@@ -23,6 +23,8 @@ Miyako::Audio:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -53,6 +55,8 @@ Miyako::Audio:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -82,6 +86,8 @@ Miyako::Audio:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -126,6 +132,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -155,6 +163,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -187,6 +197,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -216,6 +228,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -247,6 +261,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -276,6 +292,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -307,6 +325,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -336,6 +356,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -367,6 +389,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -396,6 +420,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -427,6 +453,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -456,6 +484,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -487,6 +517,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -516,6 +548,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -547,6 +581,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -576,6 +612,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -607,6 +645,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -636,6 +676,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -667,6 +709,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -696,6 +740,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -727,6 +773,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -756,6 +804,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -787,6 +837,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -817,6 +869,8 @@ Miyako::Audio::BGM:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -846,6 +900,8 @@ Miyako::Audio::BGM:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -896,6 +952,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -925,6 +983,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -956,6 +1016,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -985,6 +1047,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1016,6 +1080,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1045,6 +1111,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1077,6 +1145,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1106,6 +1176,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1137,6 +1209,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1166,6 +1240,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1197,6 +1273,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1226,6 +1304,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1257,6 +1337,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1286,6 +1368,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1317,6 +1401,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1346,6 +1432,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1377,6 +1465,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1406,6 +1496,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1437,6 +1529,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1466,6 +1560,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1497,6 +1593,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1526,6 +1624,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1557,6 +1657,8 @@ Miyako::Audio::SE:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1586,6 +1688,8 @@ Miyako::Audio::SE:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""

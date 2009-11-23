@@ -101,6 +101,8 @@ Miyako::MapChip:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -150,6 +152,8 @@ Miyako::MapChipFactory:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -179,6 +183,8 @@ Miyako::MapChipFactory:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -210,6 +216,8 @@ Miyako::MapChipFactory:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -240,6 +248,8 @@ Miyako::MapChipFactory:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -269,6 +279,8 @@ Miyako::MapChipFactory:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -375,6 +387,8 @@ Miyako::MapStruct:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -424,6 +438,8 @@ Miyako::MapStructFactory:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -454,6 +470,8 @@ Miyako::MapStructFactory:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -483,6 +501,8 @@ Miyako::MapStructFactory:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -533,6 +553,8 @@ Miyako::MapDir:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -562,6 +584,8 @@ Miyako::MapDir:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""

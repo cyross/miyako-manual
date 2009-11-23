@@ -16,7 +16,7 @@
   <table id="main_body" class="ref_body"><tbody>
 <tr><td class="type_name" colspan="2"><a name="#main">メイン</a></td></tr>
 <tr><td class="module_name" colspan="2">メイン</td></tr>
-<tr><td class="desc_body" colspan="2"></td></tr>
+<tr><td class="desc_body" colspan="2">Rubyのメイン空間</td></tr>
 <tr>
 <td class="requires">require</td>
     <td class="requires_body">forwardable iconv(RUBY_VERSION &lt; 1.9.0) kconv rbconfig<br>
@@ -52,22 +52,19 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24miyako_auto_open">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$miyako_auto_open</td></tr>
 <tr><td class="real_name" colspan="4">$miyako_auto_open</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">画面などの初期設定を自動的に行うかどうかの設定</td></tr>
 <tr>
 <td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
+    <td class="value_body" colspan="3">true/false</td>
   </tr>
 <tr>
 <td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
+    <td class="default_body" colspan="3">true</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3">$miyako_auto_open = false<br>
+require 'miyako'</td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -82,23 +79,7 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24miyako_debug_mode">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$miyako_debug_mode</td></tr>
 <tr><td class="real_name" colspan="4">$miyako_debug_mode</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
-<tr>
-<td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
-  </tr>
+<tr><td class="desc_body" colspan="4">現在は未使用</td></tr>
 <tr>
 <td class="return_to_top" colspan="4">
       <a class="return_to_top" href="#top">
@@ -112,23 +93,7 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24miyako_use_opengl">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$miyako_use_opengl</td></tr>
 <tr><td class="real_name" colspan="4">$miyako_use_opengl</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
-<tr>
-<td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
-  </tr>
+<tr><td class="desc_body" colspan="4">現在は未使用</td></tr>
 <tr>
 <td class="return_to_top" colspan="4">
       <a class="return_to_top" href="#top">
@@ -142,22 +107,21 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24not_use_audio">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$not_use_audio</td></tr>
 <tr><td class="real_name" colspan="4">$not_use_audio</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">サウンド機能の使用不可を設定<br>
+使用不可のときはtrue,使用可のときはfalseを設定する<br>
+この値は、miyako(_require_only).rbをrequireする前に設定すること</td></tr>
 <tr>
 <td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
+    <td class="value_body" colspan="3">true/false</td>
   </tr>
 <tr>
 <td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
+    <td class="default_body" colspan="3">false</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3">$not_use_audio = false<br>
+require 'miyako'</td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -172,22 +136,25 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24sampling_seq">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$sampling_seq</td></tr>
 <tr><td class="real_name" colspan="4">$sampling_seq</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">アプリケーション実行中に演奏する音楽のサンプリングレートを指定する<br>
+単位はHz(周波数)<br>
+音声ファイルを扱うときは、すべての音声ファイルを<br>
+同じサンプリングレートに統一する必要がある<br>
+この値は、miyako(_require_only).rbをrequireする前に設定すること</td></tr>
 <tr>
 <td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
+    <td class="value_body" colspan="3">1以上の整数(44100もしくは48000の倍数)</td>
   </tr>
 <tr>
 <td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
+    <td class="default_body" colspan="3">44100</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3"># サンプリングレートを48000Hz、バッファサイズを2048バイトに設定<br>
+$sampling_seq = 48000<br>
+$sound_buffer_size = 2048<br>
+require 'miyako'</td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -202,22 +169,22 @@ Miyako/API/struct_segment</td>
 <tr><td class="type_name" colspan="4"><a name="%24sound_buffer_size">グローバル変数</a></td></tr>
 <tr><td class="gv_name" colspan="4">$sound_buffer_size</td></tr>
 <tr><td class="real_name" colspan="4">$sound_buffer_size</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">サウンド機能を使うときのバッファサイズを設定する<br>
+単位はバイト</td></tr>
 <tr>
 <td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
+    <td class="value_body" colspan="3">1以上の整数(2の指数)</td>
   </tr>
 <tr>
 <td class="default">初期値</td>
-    <td class="default_body" colspan="3"></td>
+    <td class="default_body" colspan="3">4096</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3"># サンプリングレートを48000Hz、バッファサイズを2048バイトに設定<br>
+$sampling_seq = 48000<br>
+$sound_buffer_size = 2048<br>
+require 'miyako'</td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -228,6 +195,7 @@ Miyako/API/struct_segment</td>
   </tr>
 </tbody></table>
 <hr>
+<div style="text-align: right; font-weight: bold; font-type: italic;">last updated 2009/11/24</div>
 </div>
 </body>
 </html>

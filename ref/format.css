@@ -41,6 +41,7 @@ td.real_name{
   font-style: italic;
   color: black;
   background-color: white;
+  padding: 4px;
 }
 td.main_name{
   text-align: center;
@@ -93,6 +94,7 @@ td.gv_name{
   color: white;
   background-color: #808080;
   width: 20%;
+  padding: 4px;
 }
 td.cs_name{
   text-align: center;
@@ -100,6 +102,7 @@ td.cs_name{
   font-size: xx-large;
   color: white;
   background-color: #0060c0;
+  padding: 4px;
 }
 td.sm_name{
   text-align: center;
@@ -107,6 +110,7 @@ td.sm_name{
   font-size: xx-large;
   color: white;
   background-color: #000080;
+  padding: 4px;
 }
 td.mf_name{
   text-align: center;
@@ -114,6 +118,7 @@ td.mf_name{
   font-size: xx-large;
   color: white;
   background-color: #ff6060;
+  padding: 4px;
 }
 td.im_name{
   text-align: center;
@@ -121,6 +126,7 @@ td.im_name{
   font-size: xx-large;
   color: white;
   background-color: #60a060;
+  padding: 4px;
 }
 td.ac_name{
   text-align: center;
@@ -128,6 +134,7 @@ td.ac_name{
   font-size: xx-large;
   color: white;
   background-color: #a0a060;
+  padding: 4px;
 }
 td.mm_name{
   text-align: center;
@@ -135,13 +142,15 @@ td.mm_name{
   font-size: xx-large;
   color: white;
   background-color: #800000;
+  padding: 4px;
 }
 td.parameter_name{
   text-align: center;
   font-weight: bold;
   font-size: large;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #a0a000;
+  padding: 4px;
 }
 
 td.desc{
@@ -150,7 +159,8 @@ td.desc{
   font-size: larger;
   font-weight: bold;
   color: #0000a0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.requires{
   text-align: center;
@@ -158,7 +168,8 @@ td.requires{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.gv{
   text-align: center;
@@ -166,6 +177,7 @@ td.gv{
   font-size: larger;
   color: white;
   background-color: #808080;
+  padding: 4px;
   width: 20%;
 }
 td.cs{
@@ -174,7 +186,8 @@ td.cs{
   font-size: larger;
   color: white;
   background-color: #0060c0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.mixin{
   text-align: center;
@@ -182,7 +195,8 @@ td.mixin{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.desc_format{
   text-align: center;
@@ -190,7 +204,8 @@ td.desc_format{
   font-size: larger;
   color: white;
   background-color: #ff8080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.im{
   text-align: center;
@@ -198,7 +213,8 @@ td.im{
   font-size: larger;
   color: white;
   background-color: #60a060;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.mf{
   text-align: center;
@@ -206,7 +222,8 @@ td.mf{
   font-size: larger;
   color: white;
   background-color: #ff6060;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.class{
   text-align: center;
@@ -214,7 +231,8 @@ td.class{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.struct{
   text-align: center;
@@ -222,7 +240,8 @@ td.struct{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.examples{
   text-align: center;
@@ -230,7 +249,8 @@ td.examples{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.value{
   text-align: center;
@@ -238,28 +258,32 @@ td.value{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.param_desc{
   text-align: center;
   font-weight: bold;
   color: black;
   background-color: #d0d0ff;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.param_value{
   text-align: center;
   font-weight: bold;
   color: black;
   background-color: #d0d0ff;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.omit_value{
   text-align: center;
   font-weight: bold;
   color: black;
   background-color: #d0d0ff;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.default{
   text-align: center;
@@ -267,7 +291,8 @@ td.default{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.sm{
   text-align: center;
@@ -275,7 +300,8 @@ td.sm{
   font-size: larger;
   color: white;
   background-color: #000080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.module{
   text-align: center;
@@ -283,7 +309,8 @@ td.module{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.inherited{
   text-align: center;
@@ -291,7 +318,8 @@ td.inherited{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.inherits{
   text-align: center;
@@ -299,7 +327,8 @@ td.inherits{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.delegated{
   text-align: center;
@@ -307,7 +336,8 @@ td.delegated{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.delegats{
   text-align: center;
@@ -315,7 +345,8 @@ td.delegats{
   font-size: larger;
   color: white;
   background-color: #80a080;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.ac{
   text-align: center;
@@ -323,7 +354,8 @@ td.ac{
   font-size: larger;
   color: white;
   background-color: #a0a060;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.mm{
   text-align: center;
@@ -331,14 +363,16 @@ td.mm{
   font-size: larger;
   color: white;
   background-color: #800000;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.desc_parameter{
   text-align: center;
   font-weight: bold;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.return_value{
   text-align: center;
@@ -346,7 +380,8 @@ td.return_value{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.use_block{
   text-align: center;
@@ -354,7 +389,8 @@ td.use_block{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.use_block_need{
   text-align: center;
@@ -362,7 +398,8 @@ td.use_block_need{
   font-size: larger;
   color: black;
   background-color: #ffffd0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.use_block_can{
   text-align: center;
@@ -370,7 +407,8 @@ td.use_block_can{
   font-size: larger;
   color: black;
   background-color: #ffffd0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.use_block_format{
   text-align: center;
@@ -378,7 +416,8 @@ td.use_block_format{
   font-size: larger;
   color: black;
   background-color: #ffffd0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.access{
   text-align: center;
@@ -386,7 +425,8 @@ td.access{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 td.reference{
   text-align: center;
@@ -394,136 +434,200 @@ td.reference{
   font-size: larger;
   color: black;
   background-color: #ffd0d0;
-  width: 15%;
+  padding: 4px;
+  width: 20%;
 }
 
 td.desc_body{
   text-align: left;
   color: black;
   background-color: #e0e0ff;
+  padding: 4px;
 }
 td.requires_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.gv_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.cs_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.mixin_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.format_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.im_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.mf_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.class_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.struct_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.examples_body{
   text-align: left;
   background-color: #ffffc0;
+  padding: 4px;
+  width: 80%;
 }
 td.parameters{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.param_desc_body{
   text-align: left;
   color: black;
   background-color: #e0e0ff;
+  padding: 4px;
+  width: 80%;
 }
 td.value_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.param_value_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.omit_value_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.default_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.sm_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.module_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.inherited_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.inherits_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.delegated_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.delegats_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.ac_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.mm_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.return_value_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.use_block_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.use_block_need_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.use_block_can_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.use_block_format_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.access_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }
 td.reference_body{
   text-align: left;
   background-color: white;
+  padding: 4px;
+  width: 80%;
 }

@@ -3,73 +3,76 @@ main:
   gv: 
   - name: $miyako_auto_open
     desc_body: 
-    - ""
+    - "画面などの初期設定を自動的に行うかどうかの設定"
     value_body: 
-    - ""
+    - "true/false"
     default_body: 
-    - ""
+    - "true"
     examples_body: 
-    - ""
+    - "$miyako_auto_open = false"
+    - "require 'miyako'"
     reference_body: 
-    - ""
   - name: $miyako_debug_mode
     desc_body: 
-    - ""
+    - "現在は未使用"
     value_body: 
-    - ""
     default_body: 
-    - ""
     examples_body: 
-    - ""
     reference_body: 
-    - ""
   - name: $miyako_use_opengl
     desc_body: 
-    - ""
+    - "現在は未使用"
     value_body: 
-    - ""
     default_body: 
-    - ""
     examples_body: 
-    - ""
     reference_body: 
-    - ""
   - name: $not_use_audio
     desc_body: 
-    - ""
+    - "サウンド機能の使用不可を設定"
+    - "使用不可のときはtrue,使用可のときはfalseを設定する"
+    - "この値は、miyako(_require_only).rbをrequireする前に設定すること"
     value_body: 
-    - ""
+    - "true/false"
     default_body: 
-    - ""
+    - "false"
     examples_body: 
-    - ""
+    - "$not_use_audio = false"
+    - "require 'miyako'"
     reference_body: 
-    - ""
   - name: $sampling_seq
     desc_body: 
-    - ""
+    - "アプリケーション実行中に演奏する音楽のサンプリングレートを指定する"
+    - "単位はHz(周波数)"
+    - "音声ファイルを扱うときは、すべての音声ファイルを"
+    - "同じサンプリングレートに統一する必要がある"
+    - "この値は、miyako(_require_only).rbをrequireする前に設定すること"
     value_body: 
-    - ""
+    - "1以上の整数(44100もしくは48000の倍数)"
     default_body: 
-    - ""
+    - "44100"
     examples_body: 
-    - ""
+    - "# サンプリングレートを48000Hz、バッファサイズを2048バイトに設定"
+    - "$sampling_seq = 48000"
+    - "$sound_buffer_size = 2048"
+    - "require 'miyako'"
     reference_body: 
-    - ""
   - name: $sound_buffer_size
     desc_body: 
-    - ""
+    - "サウンド機能を使うときのバッファサイズを設定する"
+    - "単位はバイト"
     value_body: 
-    - ""
+    - "1以上の整数(2の指数)"
     default_body: 
-    - ""
+    - "4096"
     examples_body: 
-    - ""
+    - "# サンプリングレートを48000Hz、バッファサイズを2048バイトに設定"
+    - "$sampling_seq = 48000"
+    - "$sound_buffer_size = 2048"
+    - "require 'miyako'"
     reference_body: 
-    - ""
   desc: 
     desc_body: 
-    - ""
+    - "Rubyのメイン空間"
     requires_body: 
     - "forwardable iconv(RUBY_VERSION &lt; 1.9.0) kconv rbconfig"
     - "Miyako/API/exceptions Miyako/API/utility Miyako/API/basic_data"
@@ -96,86 +99,69 @@ Miyako:
   cs: 
   - name: VERSION
     desc_body: 
-    - ""
+    - "Miyakoのバージョン番号を文字列で返す"
     value_body: 
-    - ""
+    - "'2.1.5'"
     examples_body: 
-    - ""
+    - "exit if Miyako::VERSION < '2.1.0'"
     reference_body: 
-    - ""
   sm: 
   - name: version
     desc_body: 
-    - ""
+    - "Miyakoのバージョン番号を文字列で返す"
+    - "Miyako::VERSIONと同じ値が返る"
     parameters: 
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - "String"
     return_value_body: 
-    - ""
+    - "'2.1.5'"
     access_body: 
-    - ""
+    - "public"
     examples_body: 
-    - ""
+    - "exit if Miyako.version < '2.1.0'"
     reference_body: 
-    - ""
   - name: getOSName
     desc_body: 
-    - ""
+    - "Miyako(Ruby)が動作している環境をを文字列として返す"
+    - "現在用意している環境は以下の4種類"
+    - "\"win\",\"linux\",\"mac_osx\",\"other\""
     parameters: 
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - "String"
     return_value_body: 
-    - ""
+    - "\"win\",\"linux\",\"mac_osx\",\"other\"のどれか"
     access_body: 
-    - ""
+    - "public"
     examples_body: 
+    - "# 例1"
+    - "Miyako.getOSName"
+    - " =>\"win\" # WindowsXp/Vista/7/..."
     - ""
+    - "# 例2"
+    - "Miyako.getOSName"
+    - " =>\"linux\" # Linux"
+    - ""
+    - "# 例3"
+    - "Miyako.getOSName"
+    - " =>\"mac_osx\" # Mac OS X"
+    - ""
+    - "# 例4"
+    - "Miyako.getOSName"
+    - " =>\"other\" # *BSD, U*IX, ..."
     reference_body: 
-    - ""
   - name: setTitle
     desc_body: 
     - ""
     parameters: 
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    - parameter_name: ""
+    - parameter_name: "title"
       param_desc_body: 
       - ""
       param_value_body: 
@@ -186,44 +172,36 @@ Miyako:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
     return_value_body: 
-    - ""
     access_body: 
-    - ""
+    - "public"
     examples_body: 
     - ""
     reference_body: 
-    - ""
   - name: main_loop
     desc_body: 
-    - ""
+    - "Miyakoのゲームループ"
     parameters: 
-    - parameter_name: ""
+    - parameter_name: "is_clear"
       param_desc_body: 
-      - ""
+      - "ループ開始直前に画面を消去するかどうかを指定する"
+      - "消去するときはtrue、消去しないときはfalseを渡す"
       param_value_body: 
-      - ""
+      - "true/false"
       omit_value_body: 
-      - ""
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    use_block_body: false
-    use_block_need_body: false
+      - "true"
+    use_block_body: true
+    use_block_need_body: true
     use_block_format_body: 
-    - ""
+    - "{ ... }"
+    return_type: 
     return_value_body: 
-    - ""
     access_body: 
-    - ""
+    - "public"
     examples_body: 
     - ""
     reference_body: 
-    - ""
   - name: init
     desc_body: 
     - ""
@@ -246,82 +224,53 @@ Miyako:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
-    - ""
+    - "public"
     examples_body: 
     - ""
     reference_body: 
-    - ""
   - name: initialized?
     desc_body: 
     - ""
     parameters: 
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
-    - ""
+    - "public"
     examples_body: 
     - ""
     reference_body: 
-    - ""
   - name: open
     desc_body: 
     - ""
     parameters: 
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
-    - parameter_name: ""
-      param_desc_body: 
-      - ""
-      param_value_body: 
-      - ""
-      omit_value_body: 
-      - ""
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
-    - ""
+    - "public"
     examples_body: 
     - ""
     reference_body: 
-    - ""
   desc: 
     desc_body: 
-    - ""
+    - "Miyakoの全てのクラス・モジュールを管理する名前空間兼モジュール"
     requires_body: 
-    - ""
     mixin_body: 
-    - ""
     class_body: 
-    - ""
     module_body: 
-    - ""

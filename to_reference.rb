@@ -1,4 +1,6 @@
 #encoding: utf-8
+# Miyako リファレンスマニュアル生成スクリプト
+# 2009 Cyross Makoto
 
 require 'nokogiri'
 require 'yaml'
@@ -92,7 +94,11 @@ class Hinagata
     parts.keys.each{|dkey|
       if dkey == "desc"
         parts[dkey].each{|elm|
-          base.xpath("//td[@class=\"#{elm[0]}\"]")[0].inner_html = elm[1].join("<br>\n")
+          if elm[1]
+            base.xpath("//td[@class=\"#{elm[0]}\"]")[0].inner_html = elm[1].join("<br>\n")
+          else
+            base.xpath("//td[@class=\"#{elm[0]}\"]")[0].parent.unlink
+          end
         }
         next
       end
@@ -153,17 +159,36 @@ class Hinagata
               param_base << param_top
             end
             next
-          when "use_block_body", "use_block_need_body"
+          when "use_block_body"
             use_block[key] = elm[key]
             child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = elm[key] ? "○" : "×"
+            unless elm[key]
+              child.xpath("//td[@class=\"use_block_need_body\"]")[0].parent.unlink
+              child.xpath("//td[@class=\"use_block_format_body\"]")[0].parent.unlink
+              child.xpath("//td[@class=\"use_block\"]")[0].attribute("rowspan").value = "1"
+            end
+          when "use_block_need_body"
+            use_block[key] = elm[key]
+            body = child.xpath("//td[@class=\"#{key}\"]")[0]
+            body.inner_html = (elm[key] ? "○" : "×") if body
           when "use_block_format_body"
             block_format = elm[key] ? elm[key] : [""]
-            child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = block_format.join("<br>\n")
-          when "return_value_body"
+            body = child.xpath("//td[@class=\"#{key}\"]")[0]
+            body.inner_html = block_format.join("<br>\n") if body
+          when "return_type"
             return_value = elm[key] ? elm[key] : ["nil"]
-            child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = return_value.join("<br>\n")
+          when "return_value_body"
+            if elm[key]
+              child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = elm[key].join("<br>\n")
+            else
+              child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = "なし"
+            end
           else
-            child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = elm[key].join("<br>\n")
+            if elm[key]
+              child.xpath("//td[@class=\"#{key}\"]")[0].inner_html = elm[key].join("<br>\n")
+            else
+              child.xpath("//td[@class=\"#{key}\"]")[0].parent.unlink
+            end
           end
         }
 
@@ -202,7 +227,13 @@ class Hinagata
         base.xpath("//td[@class=\"#{dkey}_body\"]")[0].inner_html += "<a href=\"##{name}\">#{name}</a>&nbsp;#{br}\n"
       }
     }
-    
+
+    # フッタを生成
+    last_update = Nokogiri::XML::Node.new("div", top)
+    last_update["style"] = "text-align: right; font-weight: bold; font-type: italic;"
+    last_update.content = "last updated " + Time.now.strftime("%Y/%m/%d")
+    top_node << last_update
+
     top
   end
   

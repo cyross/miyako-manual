@@ -16,19 +16,7 @@
   <table id="module_body" class="ref_body"><tbody>
 <tr><td class="type_name" colspan="2"><a name="#Miyako">モジュール</a></td></tr>
 <tr><td class="module_name" colspan="2">Miyako</td></tr>
-<tr><td class="desc_body" colspan="2"></td></tr>
-<tr>
-<td class="requires">require</td>
-    <td class="requires_body"></td>
-  </tr>
-<tr>
-<td class="mixin">mixin</td>
-    <td class="mixin_body"></td>
-  </tr>
-<tr>
-<td class="mixin">mixin先</td>
-    <td class="mixin_body"></td>
-  </tr>
+<tr><td class="desc_body" colspan="2">Miyakoの全てのクラス・モジュールを管理する名前空間兼モジュール</td></tr>
 <tr>
 <td class="cs">定数</td>
     <td class="cs_body">
@@ -43,32 +31,20 @@
 <td class="mf">モジュール<br>関数</td>
     <td class="mf_body"></td>
   </tr>
-<tr>
-<td class="class">内部クラス</td>
-    <td class="class_body"></td>
-  </tr>
-<tr>
-<td class="module">内部モジュール</td>
-    <td class="module_body"></td>
-  </tr>
 </tbody></table>
 <hr>
 <table id="cs_body" class="ref_body"><tbody>
 <tr><td class="type_name" colspan="4"><a name="VERSION">定数</a></td></tr>
 <tr><td class="cs_name" colspan="4">VERSION</td></tr>
 <tr><td class="real_name" colspan="4">Miyako::VERSION</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">Miyakoのバージョン番号を文字列で返す</td></tr>
 <tr>
 <td class="value">値</td>
-    <td class="value_body" colspan="3"></td>
+    <td class="value_body" colspan="3">'2.1.5'</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3">exit if Miyako::VERSION </td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -83,69 +59,31 @@
 <tr><td class="type_name" colspan="4"><a name="version">特異メソッド</a></td></tr>
 <tr><td class="sm_name" colspan="4">version</td></tr>
 <tr><td class="real_name" colspan="4">Miyako.version</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">Miyakoのバージョン番号を文字列で返す<br>
+Miyako::VERSIONと同じ値が返る</td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.version(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.version #-&gt; String</td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
-    <td class="parameters" colspan="3">
-    <table class="parameter" width="100%"><tbody class="parameter_tbody">
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-</tbody></table>
-</td>
+    <td class="parameters" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
   </tr>
 <tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
-  </tr>
-<tr>
 <td class="return_value">戻り値</td>
-    <td class="return_value_body" colspan="3"></td>
+    <td class="return_value_body" colspan="3">'2.1.5'</td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3">exit if Miyako.version </td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -160,69 +98,46 @@
 <tr><td class="type_name" colspan="4"><a name="getOSName">特異メソッド</a></td></tr>
 <tr><td class="sm_name" colspan="4">getOSName</td></tr>
 <tr><td class="real_name" colspan="4">Miyako.getOSName</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">Miyako(Ruby)が動作している環境をを文字列として返す<br>
+現在用意している環境は以下の4種類<br>
+"win","linux","mac_osx","other"</td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.getOSName(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.getOSName #-&gt; String</td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
-    <td class="parameters" colspan="3">
-    <table class="parameter" width="100%"><tbody class="parameter_tbody">
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-</tbody></table>
-</td>
+    <td class="parameters" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
   </tr>
 <tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
-  </tr>
-<tr>
 <td class="return_value">戻り値</td>
-    <td class="return_value_body" colspan="3"></td>
+    <td class="return_value_body" colspan="3">"win","linux","mac_osx","other"のどれか</td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
-    <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
+    <td class="examples_body" colspan="3"># 例1<br>
+Miyako.getOSName<br>
+ =&gt;"win" # WindowsXp/Vista/7/...<br>
+<br>
+# 例2<br>
+Miyako.getOSName<br>
+ =&gt;"linux" # Linux<br>
+<br>
+# 例3<br>
+Miyako.getOSName<br>
+ =&gt;"mac_osx" # Mac OS X<br>
+<br>
+# 例4<br>
+Miyako.getOSName<br>
+ =&gt;"other" # *BSD, U*IX, ...</td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -240,26 +155,14 @@
 <tr><td class="desc_body" colspan="4"></td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.setTitle(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.setTitle(title) #-&gt; nil</td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
     <td class="parameters" colspan="3">
     <table class="parameter" width="100%"><tbody class="parameter_tbody">
 <tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
+<td class="parameter_name" rowspan="3">title</td>
         <td class="param_desc_body" colspan="2"></td>
       </tr>
 <tr>
@@ -274,32 +177,20 @@
 </td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
   </tr>
 <tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
-  </tr>
-<tr>
 <td class="return_value">戻り値</td>
-    <td class="return_value_body" colspan="3"></td>
+    <td class="return_value_body" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
     <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -314,69 +205,53 @@
 <tr><td class="type_name" colspan="4"><a name="main_loop">特異メソッド</a></td></tr>
 <tr><td class="sm_name" colspan="4">main_loop</td></tr>
 <tr><td class="real_name" colspan="4">Miyako.main_loop</td></tr>
-<tr><td class="desc_body" colspan="4"></td></tr>
+<tr><td class="desc_body" colspan="4">Miyakoのゲームループ</td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.main_loop(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.main_loop(is_clear = true){ ... } #-&gt; nil</td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
     <td class="parameters" colspan="3">
     <table class="parameter" width="100%"><tbody class="parameter_tbody">
 <tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
+<td class="parameter_name" rowspan="3">is_clear</td>
+        <td class="param_desc_body" colspan="2">ループ開始直前に画面を消去するかどうかを指定する<br>消去するときはtrue、消去しないときはfalseを渡す</td>
       </tr>
 <tr>
 <td class="param_value">値</td>
-        <td class="param_value_body"></td>
+        <td class="param_value_body">true/false</td>
       </tr>
 <tr>
 <td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
+        <td class="omit_value_body">true</td>
       </tr>
 </tbody></table>
 </td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
-    <td class="use_block_body" colspan="3">×</td>
+<td class="use_block" rowspan="3">ブロック</td>
+    <td class="use_block_body" colspan="3">○</td>
   </tr>
 <tr>
 <td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
+    <td class="use_block_need_body" colspan="2">○</td>
   </tr>
 <tr>
 <td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
+    <td class="use_block_format_body" colspan="2">{ ... }</td>
   </tr>
 <tr>
 <td class="return_value">戻り値</td>
-    <td class="return_value_body" colspan="3"></td>
+    <td class="return_value_body" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
     <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -428,32 +303,20 @@
 </td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
-  </tr>
-<tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
   </tr>
 <tr>
 <td class="return_value">戻り値</td>
     <td class="return_value_body" colspan="3"></td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
     <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -471,66 +334,27 @@
 <tr><td class="desc_body" colspan="4"></td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.initialized?(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.initialized? #-&gt; </td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
-    <td class="parameters" colspan="3">
-    <table class="parameter" width="100%"><tbody class="parameter_tbody">
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-</tbody></table>
-</td>
+    <td class="parameters" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
-  </tr>
-<tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
   </tr>
 <tr>
 <td class="return_value">戻り値</td>
     <td class="return_value_body" colspan="3"></td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
     <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -548,66 +372,27 @@
 <tr><td class="desc_body" colspan="4"></td></tr>
 <tr>
 <td class="desc_format">書式</td>
-    <td class="format_body" colspan="3">Miyako.open(,) #-&gt; </td>
+    <td class="format_body" colspan="3">Miyako.open #-&gt; </td>
   </tr>
 <tr>
 <td class="desc_parameter">引数</td>
-    <td class="parameters" colspan="3">
-    <table class="parameter" width="100%"><tbody class="parameter_tbody">
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-<tr>
-<td class="parameter_name" rowspan="3"></td>
-        <td class="param_desc_body" colspan="2"></td>
-      </tr>
-<tr>
-<td class="param_value">値</td>
-        <td class="param_value_body"></td>
-      </tr>
-<tr>
-<td class="omit_value">(省略時)</td>
-        <td class="omit_value_body"></td>
-      </tr>
-</tbody></table>
-</td>
+    <td class="parameters" colspan="3">なし</td>
   </tr>
 <tr>
-<td class="use_block" rowspan="3">ブロック<br>渡し</td>
+<td class="use_block" rowspan="1">ブロック</td>
     <td class="use_block_body" colspan="3">×</td>
-  </tr>
-<tr>
-<td class="use_block_need">強制</td>
-    <td class="use_block_need_body" colspan="2">×</td>
-  </tr>
-<tr>
-<td class="use_block_format">書式</td>
-    <td class="use_block_format_body" colspan="2"></td>
   </tr>
 <tr>
 <td class="return_value">戻り値</td>
     <td class="return_value_body" colspan="3"></td>
   </tr>
 <tr>
-<td class="access">アクセス<br>指定</td>
-    <td class="access_body" colspan="3"></td>
+<td class="access">アクセス</td>
+    <td class="access_body" colspan="3">public</td>
   </tr>
 <tr>
 <td class="examples">例</td>
     <td class="examples_body" colspan="3"></td>
-  </tr>
-<tr>
-<td class="reference">参照</td>
-    <td class="reference_body" colspan="3"></td>
   </tr>
 <tr>
 <td class="return_to_top" colspan="4">
@@ -618,6 +403,7 @@
   </tr>
 </tbody></table>
 <hr>
+<div style="text-align: right; font-weight: bold; font-type: italic;">last updated 2009/11/24</div>
 </div>
 </body>
 </html>

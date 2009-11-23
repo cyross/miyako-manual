@@ -23,6 +23,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -52,6 +54,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -83,6 +87,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -112,6 +118,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -143,6 +151,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -172,6 +182,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -257,6 +269,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -286,6 +300,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -317,6 +333,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -346,6 +364,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -377,6 +397,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -406,6 +428,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -437,6 +461,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -467,6 +493,8 @@ Miyako::Collision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -496,6 +524,8 @@ Miyako::Collision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -546,6 +576,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -575,6 +607,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -606,6 +640,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -635,6 +671,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -666,6 +704,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -696,6 +736,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -725,6 +767,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -810,6 +854,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -839,6 +885,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -870,6 +918,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -899,6 +949,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -930,6 +982,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -959,6 +1013,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -990,6 +1046,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1019,6 +1077,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1050,6 +1110,8 @@ Miyako::CircleCollision:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1079,6 +1141,8 @@ Miyako::CircleCollision:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1129,6 +1193,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1158,6 +1224,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1189,6 +1257,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1218,6 +1288,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1249,6 +1321,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1278,6 +1352,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1376,6 +1452,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1405,6 +1483,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1436,6 +1516,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1465,6 +1547,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1496,6 +1580,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1525,6 +1611,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1556,6 +1644,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1586,6 +1676,8 @@ Miyako::CollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1615,6 +1707,8 @@ Miyako::CollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1665,6 +1759,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1694,6 +1790,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1725,6 +1823,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1754,6 +1854,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1785,6 +1887,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1815,6 +1919,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1844,6 +1950,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -1942,6 +2050,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -1971,6 +2081,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2002,6 +2114,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2031,6 +2145,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2062,6 +2178,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2091,6 +2209,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2122,6 +2242,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2151,6 +2273,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2182,6 +2306,8 @@ Miyako::CircleCollisionEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2211,6 +2337,8 @@ Miyako::CircleCollisionEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2261,6 +2389,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2292,6 +2422,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2321,6 +2453,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2352,6 +2486,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2382,6 +2518,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2411,6 +2549,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2443,6 +2583,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2472,6 +2614,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2503,6 +2647,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2532,6 +2678,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2563,6 +2711,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2592,6 +2742,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2623,6 +2775,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2652,6 +2806,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2683,6 +2839,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2712,6 +2870,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2743,6 +2903,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2772,6 +2934,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2803,6 +2967,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2832,6 +2998,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2863,6 +3031,8 @@ Miyako::Collisions:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2892,6 +3062,8 @@ Miyako::Collisions:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -2942,6 +3114,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -2973,6 +3147,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3002,6 +3178,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3033,6 +3211,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3062,6 +3242,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3093,6 +3275,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3122,6 +3306,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3153,6 +3339,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3182,6 +3370,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3213,6 +3403,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3242,6 +3434,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3273,6 +3467,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3302,6 +3498,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3333,6 +3531,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3362,6 +3562,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -3393,6 +3595,8 @@ Miyako::CollisionsEx:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -3422,6 +3626,8 @@ Miyako::CollisionsEx:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""

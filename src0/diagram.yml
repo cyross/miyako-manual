@@ -1,5 +1,5 @@
 "Miyako::Diagram":
-"Miyako::Diagram:Arrow":
+"Miyako::Diagram::Arrow":
   mm:
     - to
     - trigger

@@ -29,6 +29,8 @@ Miyako::MiyakoIOError:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -65,6 +67,8 @@ Miyako::MiyakoFileFormatError:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -103,6 +107,8 @@ Miyako::MiyakoValueError:
     use_block_need_body: false
     use_block_format_body: 
     - ""
+    return_type: 
+    - ""
     return_value_body: 
     - ""
     access_body: 
@@ -132,6 +138,8 @@ Miyako::MiyakoValueError:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -169,6 +177,8 @@ Miyako::MiyakoProcError:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""
@@ -212,6 +222,8 @@ Miyako::MiyakoCopyError:
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 
+    - ""
+    return_type: 
     - ""
     return_value_body: 
     - ""

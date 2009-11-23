@@ -57,6 +57,13 @@ td.menu_body{
   font-weight: bold;
 }
 
+td.lib_category{
+  color: black;
+  background-color: #e0ffff;
+  color: black;
+  font-weight: bold;
+}
+
 td.menu_category{
   color: black;
   background-color: yellow;

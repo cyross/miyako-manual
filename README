@@ -1,10 +1,14 @@
 Miyako2.1 マニュアル(リファレンス込み)
 
-2009.11.23 Cyross Makoto
+2009.11.24 Cyross Makoto
 
 １．はじめに
 
 本プロジェクトは、Miyako2.1に対応したマニュアルを製作するものです。
 
+制作方法は、srcディレクトリにあるYAMLファイルを編集して、Ruby1.9で次のコマンドを実行するだけです。
+
+ruby to_reference.rb
+
 本マニュアルは、ライセンスは未定です。
-(たぶん、CreativeCommons BYになるでしょう)
+(たぶん、CreativeCommons BYになるでしょう。ツール類はLGPL2.1で)

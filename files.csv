@@ -15,7 +15,7 @@ ref_collisions.html,Miyako::Collisions,class
 ref_collisions_ex.html,Miyako::CollisionsEx,class
 ref_color.html,Miyako::Color,class
 ref_diagram.html,Miyako::Diagram,module
-ref_diagram_arrow.html,Miyako::Diagram:Arrow,struct
+ref_diagram_arrow.html,Miyako::Diagram::Arrow,struct
 ref_diagram_node_base.html,Miyako::Diagram::NodeBase,module
 ref_diagram_trigger_base.html,Miyako::Diagram::TriggerBase,module
 ref_default_trigger.html,Miyako::Diagram::DefaultTrigger,class
@@ -29,9 +29,9 @@ ref_fixedmap_layer.html,Miyako::FixedMap::FixedMapLayer,class
 ref_font.html,Miyako::Font,class
 ref_initiative_yuki_template.html,Miyako::InitiativeYukiTemplate,module
 ref_initiative_yuki.html,Miyako::InitiativeYuki,class
-ref_yuki_canceled.html,Miyako::InitiativeYuki::Canceled,struct
-ref_yuki_command.html,Miyako::InitiativeYuki::Command,struct
-ref_yuki_command_ex.html,Miyako::InitiativeYuki::CommandEx,struct
+ref_initiative_yuki_canceled.html,Miyako::InitiativeYuki::Canceled,struct
+ref_initiative_yuki_command.html,Miyako::InitiativeYuki::Command,struct
+ref_initiative_yuki_command_ex.html,Miyako::InitiativeYuki::CommandEx,struct
 ref_input.html,Miyako::Input,module
 ref_layout_struct.html,Miyako::LayoutStruct,struct
 ref_layout_snap_struct.html,Miyako::LayoutSnapStruct,struct
