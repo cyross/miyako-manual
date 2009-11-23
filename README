@@ -1,14 +1,14 @@
-Miyako2.1 �}�j���A��(���t�@�����X����)
+Miyako2.1 マニュアル(リファレンス込み)
 
 2009.11.24 Cyross Makoto
 
-�P�D�͂��߂�
+１．はじめに
 
-�{�v���W�F�N�g�́AMiyako2.1�ɑΉ������}�j���A���𐻍삷����̂ł��B
+本プロジェクトは、Miyako2.1に対応したマニュアルを製作するものです。
 
-������@�́Asrc�f�B���N�g���ɂ���YAML�t�@�C����ҏW���āARuby1.9�Ŏ��̃R�}���h�����s���邾���ł��B
+制作方法は、srcディレクトリにあるYAMLファイルを編集して、Ruby1.9で次のコマンドを実行するだけです。
 
 ruby to_reference.rb
 
-�{�}�j���A���́A���C�Z���X�͖���ł��B
-(���Ԃ�ACreativeCommons BY�ɂȂ�ł��傤�B�c�[���ނ�LGPL2.1��)
+本マニュアルは、ライセンスは未定です。
+(たぶん、CreativeCommons BYになるでしょう。ツール類はLGPL2.1で)
