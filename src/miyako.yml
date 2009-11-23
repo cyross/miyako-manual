@@ -159,15 +159,17 @@ Miyako:
     reference_body: 
   - name: setTitle
     desc_body: 
-    - ""
+    - "ウインドウタイトル(タスクバーのタイトル欄)を変更する"
+    - "引数titleには、設定するタイトルを渡す"
+    - "&lt;img src=\"window_title.png\"&gt;"
+    - "呼び出すタイミングは、require \"miyako\"を呼び出した直後あたり"
     parameters: 
     - parameter_name: "title"
       param_desc_body: 
-      - ""
+      - "タイトルとして設定したい文字列"
       param_value_body: 
-      - ""
+      - "文字列"
       omit_value_body: 
-      - ""
     use_block_body: false
     use_block_need_body: false
     use_block_format_body: 

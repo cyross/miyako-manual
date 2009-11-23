@@ -147,10 +147,18 @@ class Hinagata
                   when "parameter_name"
                     param_hash[pkey] = param[pkey]
                     param_body.xpath("//td[@class=\"#{pkey}\"]")[0].inner_html = param[pkey]
-                  when "param_desc_body", "param_value_body", "omit_value_body"
+                  when "param_desc_body", "param_value_body"
                     param[pkey] = param[pkey].nil? ? [""] : param[pkey]
                     param_hash[pkey] = param[pkey].join("/")
                     param_body.xpath("//td[@class=\"#{pkey}\"]")[0].inner_html = param[pkey].join("<br>")
+                  when "omit_value_body"
+                    if param[pkey]
+                      param_hash[pkey] = param[pkey].join("/")
+                      param_body.xpath("//td[@class=\"#{pkey}\"]")[0].inner_html = param[pkey].join("<br>")
+                    else
+                      param_body.xpath("//td[@class=\"#{pkey}\"]")[0].parent.unlink
+                      param_body.xpath("//td[@class=\"parameter_name\"]")[0].attribute("rowspan").value = "2"
+                    end
                   end
                 }
                 param_body.children[0].children.each{|pchild| param_head << pchild}
