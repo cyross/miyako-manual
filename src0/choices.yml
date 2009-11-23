@@ -1,0 +1,79 @@
+"Miyako::Choice":
+  sm:
+    - new
+  mm:
+    - body
+    - body_selected
+    - body_disable
+    - condition
+    - enable
+    - selected
+    - result
+    - left
+    - right
+    - up
+    - down
+    - base
+    - attribute
+    - end_select_proc
+    - name
+  ac:
+    - visible
+    - update_layout_position
+    - process_sprites
+    - start
+    - stop
+    - reset
+    - update_animation
+    - render_src nd
+    - render
+    - render_to
+    - update_layout_size
+    - broad_rect
+"Miyako::Choices":
+  sm:
+    - new
+    - create_choice
+  ac:
+    - visible
+    - choices
+    - name_to_choice
+    - layout_spaces
+  im:
+    - __getobj__
+    - __setobj__
+    - initialize_copy(obj)
+    - update_layout_position
+    - create_choices
+    - regist_layout_space
+    - dispose
+    - choicing?
+    - start_choice
+    - end_choice
+    - body
+    - result
+    - attribute
+    - update_choices
+    - non_select
+    - any_select?
+    - enable?
+    - select
+    - attach
+    - attach?
+    - non_select
+    - render
+    - render_to
+    - to_sprite
+    - update_layout_size
+    - broad_rect
+    - rect
+    - left_choice
+    - right_choice
+    - up_choice
+    - down_choice
+    - start
+    - stop
+    - reset
+    - update_animation
+    - ow
+    - oh

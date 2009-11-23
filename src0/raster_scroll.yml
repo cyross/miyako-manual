@@ -1,0 +1,12 @@
+"Miyako::RasterScroll":
+  sm:
+    - new
+  im:
+    - start
+    - update
+    - effecting?
+    - fade_out?
+    - stop
+    - render
+    - rendet_to
+    - fade_out

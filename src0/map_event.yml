@@ -1,0 +1,34 @@
+"Miyako::MapEventManager":
+  sm:
+    - new
+  im:
+    - initialized_copy
+    - set
+    - add
+    - []
+    - to_id
+    - include?
+    - create
+    - clear
+    - dispose
+"Miyako::MapEvent":
+  mf:
+    - initialize
+    - init
+    - update
+    - update2
+    - move!
+    - move_to!
+    - sprite_move!
+    - sprite_move_to!
+    - pos_move!
+    - pos_move_to!
+    - move
+    - move_to
+    - met?
+    - render
+    - start
+    - stop
+    - executing?
+    - final
+    - dispose

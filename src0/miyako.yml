@@ -1,0 +1,19 @@
+main:
+  gv:
+    - $miyako_auto_open
+    - $miyako_debug_mode
+    - $miyako_use_opengl
+    - $not_use_audio
+    - $sampling_seq
+    - $sound_buffer_size
+Miyako:
+  cs:
+    - VERSION
+  sm:
+    - version
+    - getOSName
+    - setTitle
+    - main_loop
+    - init
+    - initialized?
+    - open

@@ -1,0 +1,143 @@
+"Miyako::Collision":
+  sm:
+    - new
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+  ac:
+    - body
+    - rect
+    - center
+    - radius
+  im:
+    - initialize_copy
+    - bind
+    - to_ex
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - dispose
+"Miyako::CircleCollision":
+  sm:
+    - new
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - interval
+  ac:
+    - body
+    - rect
+    - center
+    - radius
+  im:
+    - initialize_copy
+    - bind
+    - to_ex
+    - interval
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - dispose
+"Miyako::CollisionEx":
+  sm:
+    - new
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+  ac:
+    - body
+    - rect
+    - center
+    - radius
+    - pos
+  im:
+    - initialize_copy
+    - bind
+    - to_col
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - dispose
+"Miyako::CircleCollisionEx":
+  sm:
+    - new
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - interval
+  ac:
+    - body
+    - rect
+    - center
+    - radius
+    - pos
+  im:
+    - initialize_copy
+    - bind
+    - to_col
+    - interval
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - dispose
+"Miyako::Collisions":
+  sm:
+    - new
+  im:
+    - initialize_copy
+    - deep_dup_collision
+    - deep_dup
+    - add
+    - append
+    - []
+    - delete
+    - clear
+    - each
+    - tap
+    - collision?
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - collision_all?
+    - meet_all?
+    - cover_all?
+    - covers_all?
+    - covered_all?
+    - dispose
+"Miyako::CollisionsEx":
+  sm:
+    - new
+  im:
+    - collision
+    - __getobj__
+    - __setobj__(obj)
+    - initialize_copy(obj)
+    - deep_dup_collision
+    - deep_dup
+    - from_children
+    - add
+    - append
+    - collision?
+    - collision_inner
+    - meet?
+    - cover?
+    - covers?
+    - covered?
+    - dispose

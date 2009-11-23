@@ -1,0 +1,1614 @@
+--- 
+Miyako::Audio: 
+  sm: 
+  - name: init
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: initialized?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: update
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - ""
+    mixin_body: 
+    - ""
+    class_body: 
+    - ""
+    module_body: 
+    - ""
+Miyako::Audio::BGM: 
+  sm: 
+  - name: update
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: new
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  im: 
+  - name: loop_count
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: in_the_loop?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: loop_count_up nd
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: allow_loop_count_up
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: allow_loop_count_up?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: initialize_copy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: set_volume
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: setVolume
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: start
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: play
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_in
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fadeIn
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: playing?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: playing_without_loop?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: pausing?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: pause
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_in?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_out?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: resume
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: stop
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_out
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fadeOut
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: dispose
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - ""
+    inherited_body: 
+    - ""
+    mixin_body: 
+    - ""
+    delegated_body: 
+    - ""
+    class_body: 
+    - ""
+    inherits_body: 
+    - ""
+    delegats_body: 
+    - ""
+Miyako::Audio::SE: 
+  sm: 
+  - name: update
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: new
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: playing_any?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: channels
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: channels=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: stop
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  im: 
+  - name: loop_count
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: in_the_loop?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: loop_count_up nd
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: allow_loop_count_up
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: allow_loop_count_up?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: initialize_copy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: start
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: play
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: playing?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: playing_without_loop?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: stop
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_in
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_out
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_in?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fade_out?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: set_volume
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: setVolume
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: dispose
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - ""
+    inherited_body: 
+    - ""
+    mixin_body: 
+    - ""
+    delegated_body: 
+    - ""
+    class_body: 
+    - ""
+    inherits_body: 
+    - ""
+    delegats_body: 
+    - ""

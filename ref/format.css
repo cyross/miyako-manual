@@ -1,0 +1,529 @@
+body {
+  background-image: url("./image/MiyakoBack.png");
+}
+
+table#body{
+  min-width: 50%;
+  width: 60%;
+  max-width: 80%;
+}
+
+table.ref_body{
+  min-width: 50%;
+  width: 80%;
+  max-width: 100%;
+}
+
+td.type_name{
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+  color: #008080;
+}
+
+td.return_to_top{
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+  color: #008080;
+}
+
+a.return_to_top{
+  text-align: left;
+  font-weight: bold;
+  font-size: large;
+  color: #008080;
+}
+
+td.real_name{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  background-color: white;
+}
+td.main_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  background-color: white;
+  margin: 16px;
+  padding: 32px;
+}
+td.module_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: yellow;
+  background-color: green;
+  margin: 16px;
+  padding: 32px;
+}
+td.class_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: red;
+  background-color: white;
+  margin: 16px;
+  padding: 32px;
+}
+td.struct_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: black;
+  background-color: #ffc0c0;
+  margin: 16px;
+  padding: 32px;
+}
+td.exception_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: black;
+  margin: 16px;
+  padding: 32px;
+}
+td.gv_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #808080;
+  width: 20%;
+}
+td.cs_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #0060c0;
+}
+td.sm_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #000080;
+}
+td.mf_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #ff6060;
+}
+td.im_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #60a060;
+}
+td.ac_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #a0a060;
+}
+td.mm_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: #800000;
+}
+td.parameter_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  background-color: white;
+}
+
+td.desc{
+  background-color: #ffa0a0;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  color: #0000a0;
+  width: 15%;
+}
+td.requires{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.gv{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #808080;
+  width: 20%;
+}
+td.cs{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #0060c0;
+  width: 15%;
+}
+td.mixin{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.desc_format{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #ff8080;
+  width: 15%;
+}
+td.im{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #60a060;
+  width: 15%;
+}
+td.mf{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #ff6060;
+  width: 15%;
+}
+td.class{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.struct{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.examples{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.value{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.param_desc{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  background-color: #d0d0ff;
+  width: 15%;
+}
+td.param_value{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  background-color: #d0d0ff;
+  width: 15%;
+}
+td.omit_value{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  background-color: #d0d0ff;
+  width: 15%;
+}
+td.default{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.sm{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #000080;
+  width: 15%;
+}
+td.module{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.inherited{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.inherits{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.delegated{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.delegats{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #80a080;
+  width: 15%;
+}
+td.ac{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #a0a060;
+  width: 15%;
+}
+td.mm{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: #800000;
+  width: 15%;
+}
+td.desc_parameter{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.return_value{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.use_block{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.use_block_need{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffffd0;
+  width: 15%;
+}
+td.use_block_can{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffffd0;
+  width: 15%;
+}
+td.use_block_format{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffffd0;
+  width: 15%;
+}
+td.access{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+td.reference{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: #ffd0d0;
+  width: 15%;
+}
+
+td.desc_body{
+  text-align: left;
+  color: black;
+  background-color: #e0e0ff;
+}
+td.requires_body{
+  text-align: left;
+  background-color: white;
+}
+td.gv_body{
+  text-align: left;
+  background-color: white;
+}
+td.cs_body{
+  text-align: left;
+  background-color: white;
+}
+td.mixin_body{
+  text-align: left;
+  background-color: white;
+}
+td.format_body{
+  text-align: left;
+  background-color: white;
+}
+td.im_body{
+  text-align: left;
+  background-color: white;
+}
+td.mf_body{
+  text-align: left;
+  background-color: white;
+}
+td.class_body{
+  text-align: left;
+  background-color: white;
+}
+td.struct_body{
+  text-align: left;
+  background-color: white;
+}
+td.examples_body{
+  text-align: left;
+  background-color: #ffffc0;
+}
+td.parameters{
+  text-align: left;
+  background-color: white;
+}
+td.param_desc_body{
+  text-align: left;
+  color: black;
+  background-color: #e0e0ff;
+}
+td.value_body{
+  text-align: left;
+  background-color: white;
+}
+td.param_value_body{
+  text-align: left;
+  background-color: white;
+}
+td.omit_value_body{
+  text-align: left;
+  background-color: white;
+}
+td.default_body{
+  text-align: left;
+  background-color: white;
+}
+td.sm_body{
+  text-align: left;
+  background-color: white;
+}
+td.module_body{
+  text-align: left;
+  background-color: white;
+}
+td.inherited_body{
+  text-align: left;
+  background-color: white;
+}
+td.inherits_body{
+  text-align: left;
+  background-color: white;
+}
+td.delegated_body{
+  text-align: left;
+  background-color: white;
+}
+td.delegats_body{
+  text-align: left;
+  background-color: white;
+}
+td.ac_body{
+  text-align: left;
+  background-color: white;
+}
+td.mm_body{
+  text-align: left;
+  background-color: white;
+}
+td.return_value_body{
+  text-align: left;
+  background-color: white;
+}
+td.use_block_body{
+  text-align: left;
+  background-color: white;
+}
+td.use_block_need_body{
+  text-align: left;
+  background-color: white;
+}
+td.use_block_can_body{
+  text-align: left;
+  background-color: white;
+}
+td.use_block_format_body{
+  text-align: left;
+  background-color: white;
+}
+td.access_body{
+  text-align: left;
+  background-color: white;
+}
+td.reference_body{
+  text-align: left;
+  background-color: white;
+}

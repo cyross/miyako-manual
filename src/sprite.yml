@@ -1,0 +1,2714 @@
+--- 
+Miyako::Sprite: 
+  sm: 
+  - name: new
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: sprites
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: "[]"
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: "[]="
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  ac: 
+  - name: visible
+    desc_body: 
+    - ""
+    format_body: 
+    - ""
+    access_body: 
+    - ""
+    value_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: collision
+    desc_body: 
+    - ""
+    format_body: 
+    - ""
+    access_body: 
+    - ""
+    value_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: tr_color
+    desc_body: 
+    - ""
+    format_body: 
+    - ""
+    access_body: 
+    - ""
+    value_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: type
+    desc_body: 
+    - ""
+    format_body: 
+    - ""
+    access_body: 
+    - ""
+    value_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  im: 
+  - name: setup
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: ox
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: oy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: ow
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: oh
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: x
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: y
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: initialize_copy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: unit=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: update_layout_position
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: w
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: h
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: bitmap
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: bitmap=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: fill
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: ox=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: oy=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: ow=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: oh=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_rect
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: adjust_part
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_move!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_move_to!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_resize!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_resize_to!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_move
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_move_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_resize
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: part_resize_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: image_size
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: image_rect
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: center_x
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: center_x=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: center_y
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: center_y=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: rect
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: broad_rect
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: update nd
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: update=
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: dispose
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: to_unit
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: to_sprite
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: clear!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_xy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_xy_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect2
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect2_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect_xy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect_xy_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect2_xy
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_rect2_xy_to
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_transform
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: render_to_transform
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: and
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: and!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: or
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: or!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: xor
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: xor!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: dec_alpha
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: dec_alpha!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: black_out
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: black_out!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: white_out
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: white_out!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: inverse
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: inverse!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: addictive
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: addictive!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: subtraction
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: subtraction!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: hue
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: hue!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: saturation
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: saturation!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: value
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: value!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: hsv
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: hsv!
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - ""
+    inherited_body: 
+    - ""
+    mixin_body: 
+    - ""
+    delegated_body: 
+    - ""
+    class_body: 
+    - ""
+    inherits_body: 
+    - ""
+    delegats_body: 
+    - ""

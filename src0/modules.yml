@@ -1,0 +1,63 @@
+"Miyako::SpriteBase":
+  mf:
+    - to_sprite
+    - to_unit
+    - visible
+    - visible=
+    - show
+    - hide
+    - rect
+    - bitmap
+    - ox
+    - oy
+    - ow
+    - oh
+    - part_rect
+    - image_size
+    - image_rect
+    - update
+    - render_xy
+    - render_xy_to
+    - render
+    - render_to
+"Miyako::Animation":
+  sm:
+    - "[]"
+    - "[]="
+    - anim_hash
+    - start
+    - stop
+    - reset
+    - update
+    - update_animation
+  mf:
+    - start
+    - stop
+    - reset
+    - update_animation
+"Miyako::SpriteArray":
+  mf:
+    - sprite_only
+    - sprite_only!
+    - deep_copy
+    - visible
+    - visible=
+    - move!
+    - move_to!
+    - start
+    - stop
+    - reset
+    - update_animation
+    - swap
+    - render
+    - render_to
+"Miyako::DeepCopy":
+  mf:
+    - deep_dup
+    - deep_clone
+"Array":
+  im:
+    - deep_dup
+"Hash":
+  im:
+    - deep_dup

@@ -1,0 +1,25 @@
+"Miyako::Rect":
+  mm:
+    - x
+    - y
+    - w
+    - h
+  im:
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - resize!
+    - resize_to!
+    - resize
+    - resize_to
+    - "+"
+    - "-"
+    - "*"
+    - "/"
+    - is_range?
+    - between?
+    - pos
+    - size
+    - to_ary
+    - to_square

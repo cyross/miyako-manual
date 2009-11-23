@@ -1,0 +1,67 @@
+"Miyako::FixedMap":
+  sm:
+    - new
+  ac:
+    - visible
+    - name
+    - map_layers
+    - mapchips
+    - map_size
+    - map_w
+    - map_h
+  im:
+    - initialize_copy
+    - add_event
+    - append_event
+    - event_update
+    - all_event_update
+    - event_update2
+    - all_event_update2
+    - event_move!
+    - all_event_move!
+    - event_sprite_move!
+    - all_event_sprite_move!
+    - event_pos_move!
+    - all_event_pos_move!
+    - update_layout_position
+    - []
+    - get_code
+    - set_mapchip_base
+    - broad_rect
+    - to_sprite
+    - to_unit
+    - chipSize
+    - final
+    - dispose
+    - events
+    - render
+    - render_to
+"Miyako::FixedMap::FixedMapLayer":
+  sm:
+    - new
+  ac:
+    - visible
+    - mapchip
+    - mapchip_units
+    - pos
+    - ignore_list
+  im:
+    - round nd
+    - reSize nd
+    - initialize_copy
+    - get_div_array nd
+    - get_mod_array nd
+    - convert_position
+    - layer
+    - product_position
+    - product_position_by_square
+    - get_code
+    - collision?
+    - meet?
+    - cover?
+    - can_access?
+    - dispose
+    - render
+    - render_to
+    - w
+    - h

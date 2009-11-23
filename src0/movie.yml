@@ -1,0 +1,24 @@
+"Miyako::Movie":
+  sm:
+    - new
+  ac:
+    - visible
+  im:
+    - update_layout_position
+    - initialize_copy
+    - set_volume
+    - playing?
+    - dispose
+    - region
+    - pause
+    - start
+    - stop
+    - current
+    - length
+    - render
+    - rewind
+    - skip
+    - rect
+    - broad_rect
+    - ox
+    - oy

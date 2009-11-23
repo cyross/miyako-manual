@@ -1,0 +1,32 @@
+"Miyako::Parts":
+  sm:
+    - new
+  im:
+    - __getobj__
+    - __setobj__
+    - initialize_copy
+    - "[]="
+    - push
+    - delete
+    - sprite_list
+    - parts
+    - remove
+    - to_sprite
+    - to_unit
+    - broad_rect
+    - dispose
+    - render
+    - render_to
+    - visible
+    - visible=
+    - show
+    - hide
+    - start
+    - stop
+    - reset
+    - update_animation
+    - each
+    - move!
+    - move_to!
+    - part_move!
+    - part_move_to!

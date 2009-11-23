@@ -1,0 +1,102 @@
+"Miyako::Diagram":
+"Miyako::Diagram:Arrow":
+  mm:
+    - to
+    - trigger
+"Miyako::Diagram::NodeBase":
+  mf:
+    - start
+    - stop
+    - pause
+    - resume
+    - update_input
+    - update
+    - reset_input
+    - render
+    - finish?
+    - "[]"
+    - "[]="
+    - dispose
+"Miyako::Diagram::TriggerBase":
+  mf:
+    - pre_process
+    - post_process
+    - update?
+    - post_update
+    - render?
+    - post_render
+"Miyako::Diagram::DefaultTrigger":
+"Miyako::Diagram::DiagramBody":
+  cs:
+    - TRIGGER_TYPES
+  sm:
+    - new
+  ac:
+    - name
+    - node
+  im:
+    - initialize_copy
+    - add_arrow
+    - start
+    - stop
+    - pause
+    - resume
+    - update_input
+    - update
+    - render
+    - "[]"
+    - "[]="
+    - replace_trigger
+    - dispose
+    - go_next nd
+"Miyako::Diagram::Manager":
+  sm:
+    - new
+  im:
+    - initialize_copy
+    - add
+    - add_arrow
+    - "[]"
+    - move
+    - first
+    - now
+    - nodes
+    - start
+    - stop
+    - pause
+    - resume
+    - update_input
+    - update
+    - render
+    - finish?
+    - dispose
+"Miyako::Diagram::Renderer":
+  sm:
+    - new
+  ac:
+    - visible
+  im:
+    - initialize_copy
+    - render
+"Miyako::Diagram::Processor":
+  sm:
+    - new
+  ac:
+    - diagram
+    - visible
+  im:
+    - initialize_copy
+    - start
+    - stop
+    - pause
+    - resume
+    - update_input
+    - update
+    - render
+    - finish?
+    - dispose
+    - renderer
+    - "[]"
+    - now
+    - now_node
+    - nodes

@@ -1,0 +1,19 @@
+"Miyako::Viewport":
+  sm:
+    - new
+  ac:
+    - visible
+  im:
+    - initialize_copy
+    - render
+    - move!
+    - move_to!
+    - resize!
+    - resize_to!
+    - move
+    - move_to
+    - resize
+    - resize_to
+    - dispose
+    - viewport
+    - square

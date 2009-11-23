@@ -1,0 +1,18 @@
+"Miyako::MiyakoError":
+"Miyako::MiyakoIOError":
+  sm:
+    - no_file
+"Miyako::MiyakoFileFormatError":
+  sm:
+    - illegal_file_format
+"Miyako::MiyakoValueError":
+  sm:
+    - illegal_value
+    - over_range
+"Miyako::MiyakoProcError":
+  sm:
+    - need_block
+"Miyako::MiyakoTypeError":
+"Miyako::MiyakoCopyError":
+  sm:
+    - not_copy

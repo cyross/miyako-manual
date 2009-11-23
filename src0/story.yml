@@ -1,0 +1,39 @@
+"Miyako::Story":
+  sm:
+    - new
+  im:
+    - prev_label
+    - next_label
+    - upper_label
+    - initialize_copy
+    - get_scene
+    - run
+    - dispose
+"Miyako::ScenePool":
+  mm:
+    - story
+    - prev
+    - next
+"Miyako::Scene":
+  sm:
+    - included
+    - scenes
+    - has_scene?
+    - listup
+    - listup2csv
+  mf:
+    - initialize
+    - init_inner
+    - story
+    - upper_scene
+    - next_scene
+    - prev_scene
+    - now_scene
+    - init
+    - setup
+    - update
+    - render
+    - final
+    - dispose
+    - next=
+    - notice

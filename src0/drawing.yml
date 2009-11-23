@@ -1,0 +1,9 @@
+"Miyako::Drawing":
+  sm:
+    - fill
+    - pset
+    - line
+    - rect
+    - circle
+    - ellipse
+    - polygon

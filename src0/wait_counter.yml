@@ -1,0 +1,41 @@
+"Miyako::WaitCounter":
+  cs:
+    - SECOND2TICK
+  sm:
+    - new
+    - tick
+    - ticks
+    - get_second_to_tick
+    - callbacks
+    - post_callbacks
+    - callback_inner
+    - update
+    - post_update
+  ac:
+    - name
+  im:
+    - append_callback
+    - append_post_callback
+    - remove_callback
+    - remove_post_callback
+    - callback_calls
+    - callback_count
+    - stop_callback_inner
+    - length
+    - size
+    - now
+    - remain
+    - remind
+    - start
+    - stop
+    - reset
+    - resume
+    - execute?
+    - executing?
+    - wait_inner
+    - waiting?
+    - finish?
+    - finished?
+    - wait
+    - call
+    - dispose

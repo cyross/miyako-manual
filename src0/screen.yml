@@ -1,0 +1,45 @@
+"Miyako::Screen":
+  cs:
+    - DefaultWidth
+    - DefaultHeight
+    - FpsMax
+    - WINMODES
+    - WINDOW_MODE
+    - FULLSCREEN_MODE
+    - ScreenFlag
+  sm:
+    - get_fps_count
+    - init
+    - initialized?
+    - set_mode
+    - pre_render_array
+    - auto_render_array
+    - toggle_mode
+    - fps
+    - fps=
+    - fps_view
+    - fps_view=
+    - bitmap
+    - w
+    - h
+    - pos
+    - to_unit
+    - center_x
+    - center_x=
+    - center_y
+    - center_y=
+    - rect
+    - broad_rect
+    - viewport
+    - size
+    - segment
+    - open
+    - set_screen
+    - set_size
+    - check_mode_error
+    - capture
+    - to_sprite
+    - clear
+    - pre_render
+    - render
+    - render_screen

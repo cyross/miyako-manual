@@ -1,0 +1,60 @@
+"Miyako::Segment":
+  sm:
+    - new
+  mm:
+    - min
+    - max
+  im:
+    - covers?
+    - collision?
+    - size
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - resize!
+    - resize_to!
+    - resize
+    - resize_to
+    - "+"
+    - "-"
+    - "*"
+    - "/"
+    - reset!
+    - to_ary
+    - in_range?
+    - between?
+    - in_edge?
+    - min?
+    - max?
+    - in_bounds?
+    - in_bounds_ex?
+    - in_bounds_rev?
+    - in_bounds_rev_ex?
+"Miyako::Segments":
+  sm:
+    - create
+    - new
+    - []
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - resize!
+    - resize_to!
+    - resize
+    - resize_to
+    - reset!
+    - to_ary
+    - in_range?
+    - between?
+    - in_edge?
+    - min?
+    - max?
+    - in_bounds?
+    - in_bounds_ex?
+    - in_bounds_rev?
+    - in_bounds_rev_ex?
+  ac:
+    - x
+    - y

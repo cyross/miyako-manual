@@ -1,0 +1,81 @@
+"Numeric":
+  im:
+    - ratio
+    - percent
+    - px
+"Miyako::LayoutStruct":
+  mm:
+    - pos
+    - size
+    - base
+    - snap
+    - on_move
+"Miyako::LayoutSnapStruct":
+  mm:
+    - sprite
+    - children
+"Miyako::Layout":
+  mf:
+    - update_layout_position
+    - init_layout
+    - copy_layout
+    - on_move
+    - left!
+    - outside_left!
+    - center!
+    - right!
+    - outside_right!
+    - top!
+    - outside_top!
+    - middle!
+    - bottom!
+    - outside_bottom!
+    - centering!
+    - left
+    - outside_left
+    - center
+    - right
+    - outside_right
+    - top
+    - outside_top
+    - middle
+    - bottom
+    - outside_bottom
+    - centering
+    - layout_dispose
+    - x
+    - y
+    - w
+    - h
+    - pos
+    - layout_pos
+    - size
+    - layout_size
+    - set_layout_size
+    - update_layout
+    - rect
+    - broad_rect
+    - snap
+    - reset_snap
+    - include_snap_child?
+    - add_snap_child
+    - delete_snap_child
+    - get_snap_children
+    - set_snap_children
+    - get_snap_sprite
+    - set_snap_sprite
+    - move!
+    - move_to!
+    - relative_move_to!
+    - move
+    - move_to
+    - relative_move_to
+    - segment
+"Miyako::LayoutSpace":
+  sm:
+    - new
+  ac:
+    - visible
+  im:
+    - initialize_copy
+    - dispose

@@ -1,0 +1,14 @@
+"Miyako::Size":
+  mm:
+    - w
+    - h
+  im:
+    - resize!
+    - resize_to!
+    - resize
+    - resize_to
+    - "+"
+    - "-"
+    - "*"
+    - "/"
+    - to_ary

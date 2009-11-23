@@ -1,0 +1,68 @@
+"Miyako::Map::MapLayer":
+  sm:
+    - new
+  ac:
+    - visible
+    - mapchip
+    - mapchip_units
+    - pos
+    - size
+    - ignore_list
+  im:
+    - round
+    - resize
+    - initialize_copy
+    - get_div_array
+    - get_mod_array
+    - covert_position
+    - layer
+    - get_code
+    - product_position
+    - product_position_by_square
+    - collision?
+    - meet?
+    - cover?
+    - can_access?
+    - dispose
+    - render
+    - render_to
+"Miyako::Map":
+  sm:
+    - new
+  ac:
+    - visible
+    - map_layers
+  im:
+    - map_size
+    - map_w
+    - map_h
+    - initialize_copy
+    - add_event
+    - append_event
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - rect
+    - broad_rect
+    - to_sprite
+    - to_unit
+    - []
+    - get_code
+    - set_mapchip_base
+    - chip_size
+    - final
+    - dispose
+    - events
+    - event_update
+    - all_event_update
+    - event_update2
+    - all_event_update
+    - event_move!
+    - all_event_move!
+    - event_sprite_move!
+    - all_event_sprite_move!
+    - event_pos_move!
+    - all_event_pos_move!
+    - render
+    - render_to

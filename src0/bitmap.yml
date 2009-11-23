@@ -1,0 +1,36 @@
+"Miyako::Bitmap":
+  sm:
+    - create
+    - load
+    - blit_aa
+    - blit_and
+    - blit_or
+    - blit_xor
+    - ck_to_ac
+    - reset_ac
+    - normal_to_ac
+    - ck_to_ac!
+    - reset_ac!
+    - normal_to_ac!
+    - screen_to_ac
+    - dec_alpha
+    - black_out
+    - white_out
+    - inverse
+    - dec_alpha!
+    - black_out!
+    - white_out!
+    - inverse!
+    - additive
+    - subtraction
+    - rotate
+    - scale
+    - transform
+    - hue
+    - saturation
+    - value
+    - hsv
+    - hue!
+    - saturation!
+    - value!
+    - hsv!

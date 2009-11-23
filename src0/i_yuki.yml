@@ -1,0 +1,163 @@
+"Object":
+  im:
+    - yuki_plot
+"Miyako::InitiativeYukiTemplate":
+  mf:
+    - render_inner
+    - render_to_inner
+    - update_animation_inner
+    - update_inner
+    - text_inner
+    - cr_inner
+    - clear_inner
+    - input_inner
+    - pausing_inner
+    - selecting_inner
+    - waiting_inner
+    - plot
+"Miyako::InitiativeYuki::Canceled":
+  mm:
+    - dummy
+"Miyako::InitiativeYuki::Command":
+  mm:
+    - body
+    - body_selected
+    - condition
+    - result
+    - body_disable
+    - enable
+"Miyako::InitiativeYuki::CommandEx":
+  mm:
+    - body
+    - body_selected
+    - condition
+    - result
+    - end_select_proc
+    - body_disable
+    - enable
+"Miyako::InitiativeYuki":
+  sm:
+    - new
+    - add_method
+  ac:
+    - visibles
+    - pre_visibles
+    - bgs
+    - base
+    - valign
+    - release_checks
+    - ok_checks
+    - cancel_checks
+    - pre_pause
+    - pre_command
+    - pre_cancel
+    - post_pause
+    - post_command
+    - post_cancel
+    - on_disable
+    - selecting_procs
+  im:
+    - add_method
+    - initialize_Copy
+    - render_inner
+    - render_to_inner
+    - update_animation_inner
+    - update_inner
+    - text_inner
+    - cr_inner
+    - clear_inner
+    - input_inner
+    - pausing_inner
+    - selecting_inner
+    - waiting_inner
+    - enable_mouse
+    - disable_mouse
+    - mouse_enable?
+    - render
+    - render_to
+    - update
+    - update_animation
+    - vars
+    - vars_names
+    - parts
+    - parts_names
+    - visibles_names
+    - pre_visibles_names
+    - bgs_names
+    - load_image
+    - load_bg
+    - load_bgm
+    - load_se
+    - pre_show
+    - pre_hide
+    - bg_show
+    - bg_hide
+    - show_textbox
+    - hide_textbox
+    - show_commandbox
+    - hide_commandbox
+    - box_shared?
+    - regist_parts
+    - select_textbox
+    - select_commandbox
+    - textbox
+    - commandbox
+    - textbox_all
+    - commandbox_all
+    - remove_parts
+    - show
+    - hide
+    - start
+    - play
+    - stop
+    - wait_by_finish
+    - process
+    - pre_process
+    - post_process
+    - over_exec
+    - setup
+    - select_plot
+    - start_plot
+    - to_plot
+    - update_input
+    - plot_facade nd
+    - call_plot
+    - reset_release_checks
+    - reset_ok_checks
+    - reset_cancel_checks
+    - reset_pre_post_release
+    - reset_pre_post_command
+    - reset_pre_post_cancel
+    - release_checks_during
+    - ok_checks_during
+    - cancel_checks_during
+    - result
+    - result=
+    - is_scene?
+    - is_scenario?
+    - canceled?
+    - condition
+    - wait_by_cond
+    - text_method
+    - text
+    - text_by_char
+    - text_by_str
+    - is_outer_height nd pv
+    - color
+    - valign_during
+    - size
+    - bold
+    - italic
+    - under_line
+    - cr
+    - clear
+    - pause
+    - pause_and_clear
+    - command
+    - reset_selecting
+    - select_result
+    - wait
+    - page
+    - now_page
+    - select_first_page
+    - dispose

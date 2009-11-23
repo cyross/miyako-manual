@@ -1,0 +1,33 @@
+"Miyako::Shape":
+  sm:
+    - text
+    - takahashi
+    - box
+    - roundbox
+    - circle
+    - ellipse
+    - polygon
+  im:
+    - init_parameter
+    - create_text
+    - takahashi
+    - set_font_size_inner
+    - calc
+    - tcalc
+    - text
+    - color
+    - size
+    - size_inner
+    - bold
+    - italic
+    - under_line
+    - cr
+    - box
+    - roundbox_basic
+    - roundbox
+    - circle
+    - ellipse
+    - polygon
+"String":
+  im:
+    - to_sprite

@@ -1,0 +1,60 @@
+"Miyako::Audio":
+  sm:
+    - init
+    - initialized?
+    - update
+"Miyako::Audio::BGM":
+  sm:
+    - update
+    - new
+  im:
+    - loop_count
+    - in_the_loop?
+    - loop_count_up nd
+    - allow_loop_count_up
+    - allow_loop_count_up?
+    - initialize_copy
+    - set_volume
+    - setVolume
+    - start
+    - play
+    - fade_in
+    - fadeIn
+    - playing?
+    - playing_without_loop?
+    - pausing?
+    - pause
+    - fade_in?
+    - fade_out?
+    - resume
+    - stop
+    - fade_out
+    - fadeOut
+    - dispose
+"Miyako::Audio::SE":
+  sm:
+    - update
+    - new
+    - playing_any?
+    - channels
+    - channels=
+    - stop
+  im:
+    - loop_count
+    - in_the_loop?
+    - loop_count_up nd
+    - allow_loop_count_up
+    - allow_loop_count_up?
+    - initialize_copy
+    - start
+    - play
+    - playing?
+    - playing_without_loop?
+    - stop
+    - fade_in
+    - fade_out
+    - fade_in?
+    - fade_out?
+    - set_volume
+    - setVolume
+    - dispose

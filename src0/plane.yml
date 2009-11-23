@@ -1,0 +1,22 @@
+"Miyako::Plane":
+  sm:
+    - new
+    - resize
+  im:
+    - resize
+    - initialize_copy
+    - x
+    - y
+    - adjust_pos
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - rect
+    - broad_rect
+    - dispose
+    - update_animation
+    - to_sprite
+    - to_unit
+    - render
+    - render_to

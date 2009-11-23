@@ -1,0 +1,38 @@
+"Miyako::Slides":
+  sm:
+    - create
+    - "[]"
+    - "[]="
+  mf:
+    - initialize
+    - clone
+    - dup
+    - __getobj__
+    - marshal_dump
+    - marshal_load
+    - method_missing
+    - respond_to?
+    - __setobj__
+    - init_slide
+    - slide_body
+    - piece
+    - "[]"
+    - "[]="
+    - render
+    - render_to
+    - show
+    - hide
+    - update
+    - update_animation
+    - stop
+    - reset
+    - slide_render
+    - slide_render_to
+    - slide_show
+    - slide_hide
+    - slide_update
+    - slide_update_animation
+    - slide_start
+    - slide_stop
+    - slide_reset
+    - dispose

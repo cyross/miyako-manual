@@ -1,0 +1,327 @@
+--- 
+main: 
+  gv: 
+  - name: $miyako_auto_open
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: $miyako_debug_mode
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: $miyako_use_opengl
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: $not_use_audio
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: $sampling_seq
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: $sound_buffer_size
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    default_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - "forwardable iconv(RUBY_VERSION &lt; 1.9.0) kconv rbconfig"
+    - "Miyako/API/exceptions Miyako/API/utility Miyako/API/basic_data"
+    - "Miyako/API/modules Miyako/API/yuki Miyako/API/i_yuki Miyako/API/layout"
+    - "Miyako/API/font Miyako/API/viewport Miyako/API/bitmap Miyako/API/drawing"
+    - "Miyako/API/spriteunit Miyako/API/sprite_animation Miyako/API/sprite_list"
+    - "Miyako/API/sprite Miyako/API/collision Miyako/API/screen Miyako/API/shape"
+    - "Miyako/API/plane Miyako/API/input Miyako/API/audio Miyako/API/movie"
+    - "Miyako/API/parts Miyako/API/choices Miyako/API/textbox"
+    - "Miyako/API/map_struct Miyako/API/map Miyako/API/fixedmap"
+    - "Miyako/API/map_event Miyako/API/story Miyako/API/diagram Miyako/API/utility"
+    - "Miyako/API/basic_data Miyako/API/modules Miyako/API/yuki Miyako/API/i_yuki"
+    - "Miyako/API/layout Miyako/API/font Miyako/API/viewport"
+    - "Miyako/API/bitmap Miyako/API/drawing Miyako/API/spriteunit"
+    - "Miyako/API/sprite_animation Miyako/API/sprite_list Miyako/API/sprite"
+    - "Miyako/API/collision Miyako/API/screen Miyako/API/shape"
+    - "Miyako/API/plane Miyako/API/input Miyako/API/audio Miyako/API/movie"
+    - "Miyako/API/parts Miyako/API/choices Miyako/API/textbox Miyako/API/map_struct"
+    - "Miyako/API/map Miyako/API/fixedmap Miyako/API/map_event Miyako/API/story"
+    - "Miyako/API/color Miyako/API/wait_counter Miyako/API/struct_point"
+    - "Miyako/API/struct_size Miyako/API/struct_rect Miyako/API/struct_square"
+    - "Miyako/API/struct_segment"
+Miyako: 
+  cs: 
+  - name: VERSION
+    desc_body: 
+    - ""
+    value_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  sm: 
+  - name: version
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: getOSName
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: setTitle
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: main_loop
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: init
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: initialized?
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  - name: open
+    desc_body: 
+    - ""
+    parameters: 
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    - parameter_name: ""
+      param_desc_body: 
+      - ""
+      param_value_body: 
+      - ""
+      omit_value_body: 
+      - ""
+    use_block_body: false
+    use_block_need_body: false
+    use_block_format_body: 
+    - ""
+    return_value_body: 
+    - ""
+    access_body: 
+    - ""
+    examples_body: 
+    - ""
+    reference_body: 
+    - ""
+  desc: 
+    desc_body: 
+    - ""
+    requires_body: 
+    - ""
+    mixin_body: 
+    - ""
+    class_body: 
+    - ""
+    module_body: 
+    - ""

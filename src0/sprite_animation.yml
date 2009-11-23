@@ -1,0 +1,38 @@
+"Miyako::SpriteAnimation":
+  sm:
+    - new
+  ac:
+    - visible
+  im:
+    - x
+    - y
+    - w
+    - h
+    - update_layout_position
+    - ow
+    - oh
+    - pattern=
+    - pattern
+    - patterns
+    - character=
+    - move_character
+    - character
+    - characters
+    - start
+    - stop
+    - toggle_exec
+    - update_animation
+    - update_frame
+    - update_wait_counter
+    - set_pat
+    - set_chr
+    - reset
+    - exec?
+    - to_unit
+    - bitmap
+    - to_sprite
+    - rect
+    - broad_rect
+    - dispose
+    - render
+    - render_to

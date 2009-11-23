@@ -1,0 +1,21 @@
+"Miyako::Color":
+  sm:
+    - "[]"
+    - "[]="
+    - to_rgb
+    - to_s
+"Object":
+  im:
+    - to_miyako_color
+"String":
+  im:
+    - to_miyako_color
+"Symbol":
+  im:
+    - to_miyako_color
+"Integer":
+  im:
+    - to_miyako_color
+"Array":
+  im:
+    - to_miyako_color

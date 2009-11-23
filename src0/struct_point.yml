@@ -1,0 +1,14 @@
+"Miyako::Point":
+  mm:
+    - x
+    - y
+  im:
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - "+"
+    - "-"
+    - "*"
+    - "/"
+    - to_ary

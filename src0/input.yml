@@ -1,0 +1,55 @@
+"Miyako::Input":
+  cs:
+    - BTNS
+  sm:
+    - create_btns
+    - init
+    - keyboard_enable
+    - keyboard_disable
+    - keyboad_enable?
+    - joypad_enable
+    - joypad_disable
+    - joypad_enable?
+    - mouse_enable
+    - mouse_disable
+    - mouse_enable?
+    - process_quit nd
+    - process_keydown nd
+    - process_keyup nd
+    - process_joyaxis
+    - process_joybuttondown
+    - process_joybuttonup
+    - process_mousemotion
+    - process_mousebuttondown
+    - process_mousebuttonup
+    - process_active
+    - process_default
+    - click_mouse_button
+    - set_mouse_button
+    - reset_mouse_button
+    - set_btn
+    - reset_btn
+    - update
+    - trigger_all?
+    - trigger_any?
+    - pushed_all?
+    - pushed_any?
+    - trigger_amount
+    - pushed_amount
+    - quit?
+    - escape?
+    - quit_or_escape?
+    - mouse_cursor_show
+    - mouse_cursor_hide
+    - get_mouse_position
+    - get_mouse_amount
+    - click?
+    - mouse_trigger?
+    - drag_and_drop?
+    - get_drag_and_drop_range
+    - click_interval
+    - click_interval=
+    - mouse_cursor_inner?
+    - enable_toggle_screen_mode
+    - disenable_toggle_screen_mode
+    - toggle_screen_mode?

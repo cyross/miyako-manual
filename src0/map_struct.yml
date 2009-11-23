@@ -1,0 +1,36 @@
+"Miyako::MapChip":
+  mm:
+    - chip_image
+    - chips
+    - size
+    - chip_size
+    - access_types
+    - collision_table
+    - access_table
+  im:
+    - to_a
+"Miyako::MapChipFactory":
+  sm:
+    - load
+    - create
+    - create_with_size
+    - all_access_table
+    - not_access_table
+"Miyako::MapStruct":
+  mm:
+    - size
+    - layer_num
+    - layers
+    - elayer_num
+    - elayers
+  im:
+    - to_a
+"Miyako::MapStructFactory":
+  sm:
+    - load
+    - create
+    - undefined_layer
+"Miyako::MapDir":
+  sm:
+    - index
+    - index2

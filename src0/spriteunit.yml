@@ -1,0 +1,24 @@
+"Miyako::SpriteUnit":
+  mm:
+    - bitmap
+    - ox
+    - oy
+    - ow
+    - oh
+    - x
+    - y
+    - cx
+    - cy
+  im:
+    - move!
+    - move_to!
+    - move
+    - move_to
+    - to_unit
+    - to_sprite
+    - rect
+    - broad_rect
+"Miyako::SpriteUnitFactory":
+  sm:
+    - create
+    - apply
